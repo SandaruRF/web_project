@@ -63,7 +63,7 @@
     </header>
 
     <div class="header">
-        <h1>Men's Shoes & Sneakers</h1>
+        <h1>Women's Shoes & Sneakers</h1>
         <p>Life's a journey, and your shoes should be ready for wherever it takes you. 
             Here at FootPrint, we've curated a diverse collection of men's footwear designed 
             to keep you comfortable and confident, no matter the destination. From sleek 

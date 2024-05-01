@@ -278,7 +278,17 @@ main .verticle_line{
     border-radius: 5px;
 }
 
-.counter div{
+.counter div,.counter input{
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.counter .count-value{
+    width:50px;
+    background-color: transparent;
+    border: none;
+}
+form .counter_btn .counter input{
     width: 30px;
     padding: 5px;
     text-align: center;
@@ -404,3 +414,18 @@ main .verticle_line{
 
   /*=============================================================================================
 ===============================================================================================*/
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row p{
+    flex-basis: 40%;
+}
+.row img{
+    margin-top: 20px;
+    margin-right: 10px;
+    height:13px;
+    width:13px;
+}
