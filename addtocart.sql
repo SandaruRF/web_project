@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 30, 2024 at 02:25 PM
+-- Generation Time: May 01, 2024 at 02:03 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,14 +47,14 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `price`, `quantity`, `color1`, `color2`, `brand`, `model`, `image1`, `image2`, `image3`, `image4`) VALUES
-(1, 'Dunk Low University', 30000, 1, 'White', 'Blue', 'Nike', '1', 'uploads/66301a22a168c_76e7febf-9ebb-4e0a-88d2-b970385383e5.png', 'uploads/66301a22a1931_76e7febf-9ebb-4e0a-88d2-b970385383e5.png', 'uploads/66301a22a1b27_76e7febf-9ebb-4e0a-88d2-b970385383e5.png', 'uploads/66301a22a1e9c_76e7febf-9ebb-4e0a-88d2-b970385383e5.png'),
-(4, 'Dunk Low Retro', 34500, 1, 'White', 'Blue', 'Nike', '1', 'uploads/66301a8cc51cd_dunk-low-retro-mens-shoes-5FQWGR.png', 'uploads/66301a8cc5410_dunk-low-retro-mens-shoes-5FQWGR.png', 'uploads/66301a8cc5629_dunk-low-retro-mens-shoes-5FQWGR.png', 'uploads/66301a8cc59a1_dunk-low-retro-mens-shoes-5FQWGR.png'),
-(5, 'Samba OG White Black', 22000, 1, 'White', 'Black', 'Adidas', '1', 'uploads/66301ade29551_4c319510-3a1f-4e9d-b5b5-1a8485e40dee.png', 'uploads/66301ade297a3_4c319510-3a1f-4e9d-b5b5-1a8485e40dee.png', 'uploads/66301ade29986_4c319510-3a1f-4e9d-b5b5-1a8485e40dee.png', 'uploads/66301ade29b96_4c319510-3a1f-4e9d-b5b5-1a8485e40dee.png'),
-(6, 'Air Jordan 4 Craft Olive GS', 45000, 1, 'Green', 'Black', 'Air Jordan', '1', 'uploads/66301b1ce0cc2_c5b61da3-6557-4490-b2d7-c083aa9d3ea5.png', 'uploads/66301b1ce0f2d_c5b61da3-6557-4490-b2d7-c083aa9d3ea5.png', 'uploads/66301b1ce1171_c5b61da3-6557-4490-b2d7-c083aa9d3ea5.png', 'uploads/66301b1ce1478_c5b61da3-6557-4490-b2d7-c083aa9d3ea5.png'),
-(7, 'New Balance 530 White Black GS', 22500, 1, 'White', 'Black', 'New Balance', '1', 'uploads/66301dcc56de5_f964fde6-4807-41a0-86a4-fa3f9d8cef12.png', 'uploads/66301dcc5706c_f964fde6-4807-41a0-86a4-fa3f9d8cef12.png', 'uploads/66301dcc572c1_f964fde6-4807-41a0-86a4-fa3f9d8cef12.png', 'uploads/66301dcc57505_f964fde6-4807-41a0-86a4-fa3f9d8cef12.png'),
-(8, 'New Balance 530 White Silver Navy', 28900, 1, 'White', 'White', 'New Balance', '1', 'uploads/66301e2866a46_11c39876-db31-4d2e-92b1-b26381496225.png', 'uploads/66301e2866d9b_11c39876-db31-4d2e-92b1-b26381496225.png', 'uploads/66301e286700e_11c39876-db31-4d2e-92b1-b26381496225.png', 'uploads/66301e2867271_11c39876-db31-4d2e-92b1-b26381496225.png'),
-(9, 'Lacoste Chaymon Leather', 40800, 1, 'Blue', 'Black', 'Lacoste', '1', 'uploads/66301e62da7dc_40CMA0043_NB0_01-removebg-preview.png', 'uploads/66301e62daa33_40CMA0043_NB0_01-removebg-preview.png', 'uploads/66301e62dac56_40CMA0043_NB0_01-removebg-preview.png', 'uploads/66301e62daea9_40CMA0043_NB0_01-removebg-preview.png'),
-(10, 'Air Jordan 1 Retro High OG Yellow Toe', 40000, 1, 'Yellow', 'White', 'Air Jordan', '1', 'uploads/66301e99940e9_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/66301e9994508_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/66301e9994a82_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/66301e9994ca6_b839e493-7571-45b6-9693-770af12c5d97.png');
+(1, 'Dunk Low University', 30000, 1, 'White', 'Blue', 'Nike', '1', 'uploads/66301a22a1b27_76e7febf-9ebb-4e0a-88d2-b970385383e5.png', 'uploads/30aedcbc-aa8e-4e5e-993b-17fa765ac747.png', 'uploads/b3db1fa5-9a42-4f55-b5c6-19e0ea49007f.png', 'uploads/5a83afa5-eee8-47d8-9418-017385148863.png'),
+(4, 'Dunk Low Retro', 34500, 1, 'White', 'Blue', 'Nike', '1', 'uploads/66301a8cc5410_dunk-low-retro-mens-shoes-5FQWGR-removebg-preview.png', 'uploads/dunk-low-retro-mens-shoes-5FQWGR-removebg-preview.png', 'uploads/dunk-low-retro-mens-shoes-5FQWGR__1_-removebg-preview.png', 'uploads/dunk-low-retro-mens-shoes-5FQWGR__2_-removebg-preview.png'),
+(5, 'Samba OG White Black', 22000, 1, 'White', 'Black', 'Adidas', '1', 'uploads/66301ade29b96_4c319510-3a1f-4e9d-b5b5-1a8485e40dee.png', 'uploads/d9950c93-129a-4085-8452-a31d0d141218.png', 'uploads/14647d82-8e90-4aec-8f02-42c1cb8be87b.png', 'uploads/7a41ebcc-3a4f-4038-9bd2-df062a25d996.png'),
+(6, 'Air Jordan 4 Craft Olive GS', 45000, 1, 'Green', 'Black', 'Air Jordan', '1', 'uploads/66301b1ce1478_c5b61da3-6557-4490-b2d7-c083aa9d3ea5.png', 'uploads/82211853-64d7-4d1e-8f6e-a22aa7744c22.png', 'uploads/aea3e5c1-7282-4c00-99c5-bcb7a3572227.png', 'uploads/cd764151-4682-47a7-9975-fcfeab928657.png'),
+(7, 'New Balance 530 White Black GS', 22500, 1, 'White', 'Black', 'New Balance', '1', 'uploads/66301dcc5706c_f964fde6-4807-41a0-86a4-fa3f9d8cef12.png', 'uploads/3cd27db9-b783-45cd-aa6a-edbd9f1e1319.png', 'uploads/8d1d5529-8edd-40c8-9e87-be1794f25871.png', 'uploads/1b0afa56-ac63-47d1-a426-80bbb19c5234.png'),
+(8, 'New Balance 530 White Silver Navy', 28900, 1, 'White', 'White', 'New Balance', '1', 'uploads/66301e2866a46_11c39876-db31-4d2e-92b1-b26381496225.png', 'uploads/1bc9668c-a8f7-4cf4-8ebf-38187aa78c67.png', 'uploads/82fab65f-cd35-4814-94a2-19883e61fa18.png', 'uploads/0fae25a7-6d2b-4f2c-b3b7-20e67537b2f5.png'),
+(9, 'Lacoste Chaymon Leather', 40800, 1, 'Blue', 'Black', 'Lacoste', '1', 'uploads/66301e62da7dc_40CMA0043_NB0_01-removebg-preview.png', 'uploads/40CMA0043_NB0_05-removebg-preview.png', 'uploads/40CMA0043_NB0_04-removebg-preview.png', 'uploads/40CMA0043_NB0_02-removebg-preview.png'),
+(10, 'Air Jordan 1 Retro High OG Yellow Toe', 40000, 1, 'Yellow', 'White', 'Air Jordan', '1', 'uploads/66301e9994508_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/443014c5-41b9-4763-8718-1e7a9f8c59e9.png', 'uploads/3f9e38b7-74ac-4e39-8163-5d29dd270e38.png', 'uploads/3bd90e16-7d0d-4a20-b2a2-de09bada7831.png');
 
 --
 -- Indexes for dumped tables
