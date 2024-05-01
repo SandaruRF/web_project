@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 02:03 PM
+-- Generation Time: May 01, 2024 at 07:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `addtocart`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
+  `shoe_id` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `shoe_id`, `quantity`, `price`) VALUES
+(12, 7, 3, 22500),
+(13, 8, 2, 28900),
+(14, 6, 2, 45000);
 
 -- --------------------------------------------------------
 
@@ -56,9 +78,43 @@ INSERT INTO `product` (`product_id`, `product_name`, `price`, `quantity`, `color
 (9, 'Lacoste Chaymon Leather', 40800, 1, 'Blue', 'Black', 'Lacoste', '1', 'uploads/66301e62da7dc_40CMA0043_NB0_01-removebg-preview.png', 'uploads/40CMA0043_NB0_05-removebg-preview.png', 'uploads/40CMA0043_NB0_04-removebg-preview.png', 'uploads/40CMA0043_NB0_02-removebg-preview.png'),
 (10, 'Air Jordan 1 Retro High OG Yellow Toe', 40000, 1, 'Yellow', 'White', 'Air Jordan', '1', 'uploads/66301e9994508_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/443014c5-41b9-4763-8718-1e7a9f8c59e9.png', 'uploads/3f9e38b7-74ac-4e39-8163-5d29dd270e38.png', 'uploads/3bd90e16-7d0d-4a20-b2a2-de09bada7831.png');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `signup`
+--
+
+CREATE TABLE `signup` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `signup`
+--
+
+INSERT INTO `signup` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
+(32, 'qwerty', 'romina', 'a@g.com', '$2y$10$6N9'),
+(33, 'abc', 'romina', 'b@g.com', '123'),
+(34, 'sehara', 'Fernando', 'sehara@gmail.com', 'abc@123'),
+(35, 'Saman', 'Perera', 's@gmail.com', '?C1??8??*?'),
+(36, 'Kasun', 'Perera', 'k@gmail.com', '%???2;E8??'),
+(37, 'Tharuka', 'Prabhashana', 'tp@gmail.com', 'b24331b1a1'),
+(38, 'Divan', 'Sathsara', 'ds@gmail.com', 'b24331b1a138cde62aa1f679164fc62f'),
+(39, 'Shiny', 'Fernando', 'shinyfernando719@gmail.com', 'e10adc3949ba59abbe56e057f20f883e');
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `product`
@@ -67,8 +123,20 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`);
 
 --
+-- Indexes for table `signup`
+--
+ALTER TABLE `signup`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `product`

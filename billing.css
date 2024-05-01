@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.img{
+    top:12vh;
+    position: fixed;
+    height: 100vh;
+}
+#button {
+    background-color: black;
+    text-align: center;
+    text-decoration-color: white;
+    color: white;
+    text-align: center;
+    width: 95.0%
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+.main {
+    display: flex;
+}
+
+#Billingform,
+#roadmap,
+.forminline input {
+    display: inline-block;
+}
+
+#Billingform {
+    background-color: #F4EFFF;
+    width: 58.2%;
+}
+
+#roadmap {
+    background-color: #CAB8F1;
+    width: 41.8%;
+    float: right;
+    height:100%;
+}
+
+input {
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 1%;
+    padding-left: 1%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+
+
+}
+
+.long {
+    width: 74.75%
+}
+
+label {
+    padding-bottom: 1.5%;
+    margin-left: 3%;
+    font-weight: 100;
+
+}
+
+fieldset {
+    margin-left: 8%;
+    margin-right: 50px;
+    border: none;
+}
+
+.fieldset {
+    padding-top: 5%
+}
+
+.forminline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    height: 5%;
+    padding: 1%;
+    padding-bottom: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    font: 400 18px / 1.16 "Raleway", Helvetica, Arial, serif;
+    background-color: white;
+    position: fixed;
+    top:0px;
+    height:10vh;
+    width:100%;
+    z-index: 1;
+
+}
+
+.header img {
+    position: absolute;
+    float: left;
+    height: auto;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+}
+
+.header .topnav {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.header .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.header .topnav a:hover {
+    color: rgb(179, 58, 239, 1)
+}
+
+.header .topnav a img {
+    position: relative;
+    top: -8px;
+}
+.left-col-1{
+    flex-basis: 47.5%;
+    margin-left:10px;
+    
+}
+.left-col-2{
+    flex-basis:49%;
+    margin-right:0px;
+}
+.inline1{
+    height:30px;
+    padding:5px;
+}
+#Billingform{
+    position: absolute;
+    margin-top:50px;
+}
