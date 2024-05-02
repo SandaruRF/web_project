@@ -429,3 +429,193 @@ form .counter_btn .counter input{
     height:13px;
     width:13px;
 }
+
+
+/*=============================================================================================
+===============================================================================================
+================================footer styles================================================*/
+
+.footer{
+position: absolute;
+top:3500px;
+bottom: 0;
+background-color:#000000;
+width: 100%;
+left: 0;
+right: 0;
+height: 405px;
+}
+
+.footer .logo1{
+position: absolute;
+top: 50px;
+padding-left:5% ;
+}
+
+.footer .links{
+position: absolute;
+top: 137px;
+right: 1207.2000732422px;
+bottom: 22px;
+left: 588px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 15px "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+
+.footer .links h5{
+font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 17px;
+}
+
+.footer .info{
+position: absolute;
+top: 90px;
+right: 1207.2000732422px;
+bottom: 22px;
+left: 829px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 15px "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+
+.footer .info h5{
+font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 17px;
+}
+
+.footer .cus{
+position: absolute;
+top: 81px;
+right: 1207.2000732422px;
+bottom: 22px;
+left: 1086px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 15px "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+
+.footer .cus h5{
+font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 17px;
+}
+
+.footer .policy{
+position: absolute;
+top: 360px;
+left: 1013px;
+padding-left:5% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+.footer .policy h5{
+font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 15px;
+}
+
+.footer .copy{
+position: absolute;
+top: 360px;
+padding-left:5% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+.footer .copy h5{
+font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 15px;
+}
+
+.footer .cookie{
+left: 510px;
+position: absolute;
+top: 360px;
+padding-left:5% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+.footer .cookie h5{
+font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 15px;
+}
+.footer .terms{
+left: 750px;
+position: absolute;
+top: 360px;
+padding-left:5% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+width: 244px;
+height: 20px;
+font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+color: white;
+text-align: center;
+}
+.footer .terms h5{
+font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+font-size: 15px;
+}
+.footer span{
+padding-bottom: 5px;
+}
+.footer .soc img{
+top:150px ;
+position: absolute;
+padding-left: 5%;
+width: 44px;
+height: auto;
+}
+.footer #img2{
+left: 85px;
+}
+
+.footer #img3{
+left: 163px;
+}
+.footer a{
+text-decoration: none;
+color: inherit;
+}
+
+/*=====================================================================================================
+=====================================================================================================*/

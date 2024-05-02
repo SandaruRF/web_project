@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body{
+    margin: 0;
+    padding:0;
+    height:100%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    height: 5%;
+    padding: 1%;
+    padding-bottom: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    font: 400 18px / 1.16 "Raleway", Helvetica, Arial, serif;
+    background-color: white;
+    
+}
+
+.header img{
+    position: absolute;
+    float: left;
+    height: auto;
+}
+
+.logo{
+    width: 15%;
+    height: auto;
+}
+.header .topnav{
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.header .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .header .topnav a:hover{
+    color:rgb(179,58,239,1)
+  }
+
+  .header .topnav a img{
+    position: relative;
+    top: -8px;
+  }
+
+  .brandImg{
+    top: 77px;
+    object-fit: cover;
+    position: absolute;
+    width: 1513px;
+    overflow: hidden;
+    margin: 0 0.5% 0 0.3%;
+  }
+  .discover{
+    position: absolute;
+    top: 651px;
+    width: 1513px;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .disBack{
+    position: relative;
+    width: 1513px;
+    object-fit: cover;
+    height: fit-content;
+  }
+
+  .disBtn{
+    background-color: #0f0000;
+    position: absolute;
+    z-index: 1;
+    top: 225px;
+    right: 674.2000732422px;
+    left: 658px;
+  }
+
+  .Btntxt{
+    width: 179px;
+    height: 34px;
+    object-fit: cover; 
+  }
+
+  .disText{
+    position: absolute;
+    top: 0px;
+    right: 84.2000732422px;
+    bottom: 3399.5px;
+    left: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1358px;
+    height: 144px;
+    font: 400 51px/1.3 "Suez One", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+    letter-spacing: 7.7px;
+  }
+  
+  
+  .rect {
+    position: absolute;
+    top: 982px;
+    left: 0;
+    right: 0;
+    width: 1515px;
+    height: 75px;
+    background-color: #0f0000;
+  }
+
+  .img1{
+    position: absolute;
+    top: 1056px;
+    left: 0;
+    width: 1515px;
+    height: 364px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+    .aboutus{
+        position: absolute;
+        width: 100%;
+        top: 1420px;
+    }
+    .hero{
+        position: absolute;
+        top: 38px;
+        right: 607.2000732422px;
+        left: 613px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 291px;
+        height: 59px;
+        font: 400 45px/1.31 "Suez One", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+    }
+    .subhero{
+        position: absolute;
+        top: 200px;
+        right: 105.2000732422px;
+        left: 103px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1303px;
+        height: 184px;
+        font: 400 20px/1.14 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+    .img2{
+        position: absolute;
+        top: 1950px;
+    
+    }
+    .collection{
+        position: absolute;
+        top: 2367px;
+    }
+    .colTitle{
+        position: absolute;
+        top: 10px;
+        left: 532px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 454px;
+        height: 59px;
+        font: 400 45px/1.31 "Suez One", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+    }
+    .rect4{
+        position: absolute;
+        top: 114px;
+        width: 1510px;
+        height: auto;
+        /* background-color: red; */
+
+    }
+
+    .rect4 a{
+        text-decoration: none;
+        position: relative;
+    }
+    .rect5 {
+        position: absolute;
+        top: -28px;
+        right: 1084.2000732422px;
+        bottom: 1195px;
+        left: 79px;
+        width: 348px;
+        height: 456px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+      }
+
+      
+      .tile1{
+        position: absolute;
+        top: 325px;
+        right: 1133.2000732422px;
+        bottom: 1210px;
+        left: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 94px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+          }
+
+    .tileimage1 {
+        top: 100px;
+        right: 1084.2000732422px;
+        bottom: 1296px;
+        left: 79px;
+        width: 348px;
+        height: 348px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        }
+    .rect51 {
+        position: relative;
+        top: -28px;
+        bottom: 1195px;
+        left: 50%;
+        width: 348px;
+        height: 455px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+        transform: translate(-50%, 0);
+        }
+    .tileimage2 {
+        position: absolute;
+        top: 0px;
+        bottom: 1298px;
+        left: 50%;
+        width: 348px;
+        height: 345px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        transform: translate(-50%, 0);
+        }
+    .tile2 {
+        position: absolute;
+        top: 325px;
+        right: 631.2000732422px;
+        bottom: 1210px;
+        left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 94px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+        }
+
+   .rect52 {
+        position: absolute;
+        top: -28px;
+        right: 80.2000732422px;
+        bottom: 1195px;
+        left: 1083px;
+        width: 348px;
+        height: 456px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+        }
+    .tileimage3 {
+        position: absolute;
+        top: 0px;
+        bottom: 1298px;
+        width: 348px;
+        height: 345px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        }
+    .tile3 {
+        position: absolute;
+        top: 325px;
+        bottom: 1210px;
+        left: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 94px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+        }
+
+    .rect53 {
+        top: 428px;
+        position: absolute;
+        right: 1084.2000732422px;
+        bottom: 597px;
+        left: 79px;
+        width: 348px;
+        height: 456px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+        }
+    .tileimage4 {
+        position: absolute;
+        top: 329px;
+        bottom: 612px;
+        left: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 94px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+        }
+    .tile4 {
+        position: absolute;
+        top: 7px;
+        bottom: 748px;
+        width: 348px;
+        height: 347px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        }
+
+    .rect6 {
+        top: 427px;
+        position: absolute;
+        bottom: 597px;
+        left: 50%;
+        width: 348px;
+        height: 456px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+        transform: translate(-50%, 0);
+          }
+    .tileimage5 {
+        position: absolute;
+        top: 329px;
+        right: 631.2000732422px;
+        bottom: 658px;
+        left: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 47px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+    }
+     .image9 {
+        position: absolute;
+        top: 3134px;
+        bottom: 725px;
+        left: 50%;
+        width: 348px;
+        height: 361px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        transform: translate(-50%, 0);
+        }
+
+    .rect54 {
+        top: 428px;
+        position: absolute;
+        right: 80.2000732422px;
+        bottom: 597px;
+        left: 1083px;
+        width: 348px;
+        height: 456px;
+        background-color: white;
+        border-radius: 8px 8px 8px 8px;
+        }
+    .tileimage6 {
+        top: 329px;
+        right: 80.2000732422px;
+        bottom: 751px;
+        left: 0px;
+        width: 348px;
+        height: 344px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        }
+    .tile6 {
+        position: absolute;
+        top: 325px;
+        right: 129.2000732422px;
+        bottom: 612px;
+        left: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 94px;
+        font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
+        color: black;
+        text-align: center;
+        }
+        
+    .footer{
+        position: absolute;
+        top:3500px;
+        bottom: 0;
+        background-color:#000000;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 405px;
+    }
+
+    .footer .logo1{
+        position: absolute;
+        top: 50px;
+        padding-left:5% ;
+    }
+
+    .footer .links{
+        position: absolute;
+        top: 137px;
+        right: 1207.2000732422px;
+        bottom: 22px;
+        left: 588px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 15px "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer .links h5{
+        font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 17px;
+    }
+
+    .footer .info{
+        position: absolute;
+        top: 90px;
+        right: 1207.2000732422px;
+        bottom: 22px;
+        left: 829px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 15px "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer .info h5{
+        font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 17px;
+    }
+
+    .footer .cus{
+        position: absolute;
+        top: 81px;
+        right: 1207.2000732422px;
+        bottom: 22px;
+        left: 1086px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 15px "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer .cus h5{
+        font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 17px;
+    }
+
+    .footer .policy{
+        position: absolute;
+        top: 360px;
+        left: 1013px;
+        padding-left:5% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    .footer .policy h5{
+        font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 15px;
+    }
+
+    .footer .copy{
+        position: absolute;
+        top: 360px;
+        padding-left:5% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    .footer .copy h5{
+        font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 15px;
+    }
+
+    .footer .cookie{
+        left: 510px;
+        position: absolute;
+        top: 360px;
+        padding-left:5% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    .footer .cookie h5{
+        font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 15px;
+    }
+    .footer .terms{
+        left: 750px;
+        position: absolute;
+        top: 360px;
+        padding-left:5% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 244px;
+        height: 20px;
+        font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        color: white;
+        text-align: center;
+    }
+    .footer .terms h5{
+        font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+        font-size: 15px;
+    }
+    .footer span{
+        padding-bottom: 5px;
+    }
+    .footer .soc img{
+        top:150px ;
+        position: absolute;
+        padding-left: 5%;
+        width: 44px;
+        height: auto;
+    }
+    .footer #img2{
+        left: 85px;
+    }
+
+    .footer #img3{
+        left: 163px;
+    }
+    .footer a{
+        text-decoration: none;
+        color: inherit;
+    }
+   

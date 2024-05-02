@@ -79,7 +79,7 @@ $conn->close();
         <a href="">FAQ</a>
         <a href="#footer">Contact Us</a>
         <a href="./create.php"><img src="./assets2/9b91e3b2b4b199ba203624dabc95f709.png" alt="alt text" /></a>
-        <a href="./cart.php"><img src="C:\xampp\htdocs\Billing page\footprint_brand_logo_blue.png" alt="alt text" /></a>
+        <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
       </div>
     </header>
     <div id="Billingform">
@@ -181,7 +181,7 @@ $conn->close();
     </div>
   </div>
   <div id="roadmap">
-    <h1><img src="img.jpg" class="img"></h1>
+    <h1><img src="assets2/img.jpg" class="img"></h1>
 
 
   </div>

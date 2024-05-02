@@ -38,7 +38,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -143,9 +143,55 @@
         ?>
     </main>
 
-    <footer>
-        <div class="footer">
-            
+    <footer class="footer" id="footer">
+        <div>
+            <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+            <div class="soc"> 
+                <img src="assets2/twitter.png">
+                <img id="img2" src="assets2/facebook.png">
+                <img id="img3" src="assets2/social.png">
+            </div>
+        </div>
+        <div class="links">
+            <h5 class="">Main Links</h5>
+            <a href=""><span >Men&#x27;s</span></a>
+            <a href=""><span>Ladies</span></a>
+            <a href=""><span>Kids</span></a>
+            <a href=""><span>Limited Edition</span></a>
+            <a href=""><span>School Shoes</span></a>
+            <a href=""><span>Flip Flops &amp; Sandals</span></a>
+            <a href=""><span>Accessories</span></a>
+            <a href=""><span>New Arrivals</span></a>
+        </div>  
+
+        <div class="info">
+            <h5 class="">Company Info</h5>
+            <a href=""><span >About FootPrint</span></a>
+            <a href=""><span>Our Story</span></a>
+            <a href=""><span>Meet the Team</span></a>
+        </div>  
+
+
+        <div class="cus">
+            <h5 class="">Customer Support</h5>
+            <a href=""><span >Shipping &amp; Delivery</span></a>
+            <a href=""><span>Returns &amp; Exchanges</span></a>
+        </div>  
+
+        <div class="policy">
+            <a href=""><h5>Privacy Policy</h5></a>
+        </div>
+
+        <div class="copy">
+            <a href=""><h5>© 2024 FootPrint, Inc.</h5></a>
+        </div>
+
+        <div class="cookie">
+            <a href=""><h5>Cookie Policy</h5></a>
+        </div>
+
+        <div class="terms">
+            <a href=""><h5>Terms and Services</h5></a>
         </div>
     </footer>
 
