@@ -217,6 +217,7 @@ body{
         height: 456px;
         background-color: white;
         border-radius: 8px 8px 8px 8px;
+        cursor: pointer;
       }
 
       
@@ -234,6 +235,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
           }
 
     .tileimage1 {
@@ -245,6 +247,7 @@ body{
         height: 348px;
         -o-object-fit: cover;
         object-fit: cover;
+        cursor: pointer;
         }
     .rect51 {
         position: relative;
@@ -256,6 +259,7 @@ body{
         background-color: white;
         border-radius: 8px 8px 8px 8px;
         transform: translate(-50%, 0);
+        cursor: pointer;
         }
     .tileimage2 {
         position: absolute;
@@ -267,6 +271,7 @@ body{
         -o-object-fit: cover;
         object-fit: cover;
         transform: translate(-50%, 0);
+        cursor: pointer;
         }
     .tile2 {
         position: absolute;
@@ -282,6 +287,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
         }
 
    .rect52 {
@@ -294,6 +300,8 @@ body{
         height: 456px;
         background-color: white;
         border-radius: 8px 8px 8px 8px;
+        cursor: pointer;
+        cursor: pointer;
         }
     .tileimage3 {
         position: absolute;
@@ -303,6 +311,7 @@ body{
         height: 345px;
         -o-object-fit: cover;
         object-fit: cover;
+        cursor: pointer;
         }
     .tile3 {
         position: absolute;
@@ -317,6 +326,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
         }
 
     .rect53 {
@@ -329,6 +339,7 @@ body{
         height: 456px;
         background-color: white;
         border-radius: 8px 8px 8px 8px;
+        cursor: pointer;
         }
     .tileimage4 {
         position: absolute;
@@ -343,6 +354,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
         }
     .tile4 {
         position: absolute;
@@ -352,6 +364,7 @@ body{
         height: 347px;
         -o-object-fit: cover;
         object-fit: cover;
+        cursor: pointer;
         }
 
     .rect6 {
@@ -364,6 +377,7 @@ body{
         background-color: white;
         border-radius: 8px 8px 8px 8px;
         transform: translate(-50%, 0);
+        cursor: pointer;
           }
     .tileimage5 {
         position: absolute;
@@ -379,6 +393,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
     }
      .image9 {
         position: absolute;
@@ -390,6 +405,7 @@ body{
         -o-object-fit: cover;
         object-fit: cover;
         transform: translate(-50%, 0);
+        cursor: pointer;
         }
 
     .rect54 {
@@ -402,6 +418,7 @@ body{
         height: 456px;
         background-color: white;
         border-radius: 8px 8px 8px 8px;
+        cursor: pointer;
         }
     .tileimage6 {
         top: 329px;
@@ -412,6 +429,7 @@ body{
         height: 344px;
         -o-object-fit: cover;
         object-fit: cover;
+        cursor: pointer;
         }
     .tile6 {
         position: absolute;
@@ -427,6 +445,7 @@ body{
         font: 400 40px/1.17 "Raleway", Helvetica, Arial, serif;
         color: black;
         text-align: center;
+        cursor: pointer;
         }
         
     .footer{

@@ -58,29 +58,27 @@ $conn->close();
     <div class="collection" id="ourcollection" >
         <h1 class="colTitle">Our Collection</h1>
         <div class="rect4">
-            <a href="men's_collection.php">
-            <div class="rect5">
+            <div class="rect5" id="mens">
                 <img class="tileimage1" src="./assets2/light_blue_sneakers_side_view.png" alt="alt text" />
                 <h1 class="tile1">Men's Collection</h1>
-            </div></a>
-            <a href="women's_collection.php">
-            <div class="rect51">
+            </div>
+            <div class="rect51" id="womens">
                 <img class="tileimage2" src="./assets2/classic_white_sneakers_side_view.png" alt="alt text" />
                 <h1 class="tile2">Women's Collection</h1>
-            </div></a>
-            <div class="rect52">
+            </div>
+            <div class="rect52" id="kids">
                 <img class="tileimage3" src="./assets2/olive_green_sneakers_side_view.png" alt="alt text" />
                 <h1 class="tile3">Kids Collection</h1>
             </div>
-            <div class="rect53">
+            <div class="rect53" id="flips">
                 <h1 class="tileimage4">Flip Flops &amp; Sandals</h1>
                 <img class="tile4" src="./assets2/blue_sneakers_isolated.png" alt="alt text" />
             </div>
-            <div class="rect6">
+            <div class="rect6" id="acc">
                 <h1 class="tileimage5">Accessories</h1>
                 <img class="tile5" src="./assets2/striped_white_sneakers_isolated.png" alt="alt text" />
             </div>
-            <div class="rect54">
+            <div class="rect54" id="limited">
                 <img class="tileimage6" src="./assets2/greenish_sneakers_isolated.png" alt="alt text" />
                 <h1 class="tile6">Limited Edition</h1>
             </div>
@@ -136,7 +134,38 @@ $conn->close();
         <div class="terms">
             <a href=""><h5>Terms and Services</h5></a>
         </div>
-   
+    
     </footer>
+    <script>
+        // Get a reference to the div element
+        const mens = document.getElementById('mens');
+        const womens = document.getElementById('womens');
+        const kids = document.getElementById('kids');
+        const flips = document.getElementById('flips');
+        const acc = document.getElementById('acc');
+        const limited = document.getElementById('limited');
+
+        // Add a click event listener to the div
+        mens.addEventListener('click', function() {
+        // Redirect to the desired location
+        window.location.href = "men's_collection.php";
+        });
+
+        womens.addEventListener('click', function() {
+        // Redirect to the desired location
+        window.location.href = "women's_collection.php";
+        });
+
+
+        kids.addEventListener('click', function() {
+        // Redirect to the desired location
+        window.location.href = "kids's_collection.php";
+        });
+
+        acc.addEventListener('click', function() {
+        // Redirect to the desired location
+        window.location.href = "accessories's_collection.php";
+        });
+    </script>
 </body>
 </html>
