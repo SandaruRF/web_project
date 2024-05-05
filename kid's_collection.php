@@ -7,26 +7,32 @@
         $sortOrder = "ORDER BY price ASC";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'high_low') {
         $sortOrder = "ORDER BY price DESC";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'nike') {
-        $sortOrder = "AND brand='Nike'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'lacoste') {
-        $sortOrder = "AND brand='Lacoste'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'merrel') {
+        $sortOrder = "AND brand='merrel'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'vans') {
+        $sortOrder = "AND brand='vans'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'adidas') {
         $sortOrder = "AND brand='Adidas'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'newBalance') {
-        $sortOrder = "AND brand='New Balance'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'airJordan') {
-        $sortOrder = "AND brand='Air Jordan'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'skechers') {
+        $sortOrder = "AND brand='New skechers'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'puma') {
+        $sortOrder = "AND brand='puma'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'white') {
         $sortOrder = "AND color1='white' OR color2='white'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'black') {
         $sortOrder = "AND color1='black' OR color2='black'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'green') {
-        $sortOrder = "AND color1='green' OR color2='green'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'pink') {
+        $sortOrder = "AND color1='pink' OR color2='pink'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'yellow') {
         $sortOrder = "AND color1='yellow' OR color2='yellow'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'blue') {
-        $sortOrder = "AND color1='blue' OR color2='blue'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'gold') {
+        $sortOrder = "AND color1='gold' OR color2='gold'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'red') {
+        $sortOrder = "AND color1='red' OR color2='red'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'green') {
+        $sortOrder = "AND color1='green' OR color2='green'";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'orange') {
+        $sortOrder = "AND color1='orange' OR color2='orange'";
     }
 
     $sql = "SELECT * FROM product WHERE product_id BETWEEN 22 AND 33 $sortOrder";
@@ -84,23 +90,23 @@
                 <div class="content">
                     <a href="?sort=white">White</a>
                     <a href="?sort=black">Black</a>
-                    <a href="?sort=blue">Pink</a>
-                    <a href="?sort=green">Gold</a>
+                    <a href="?sort=pink">Pink</a>
+                    <a href="?sort=gold">Gold</a>
                     <a href="?sort=yellow">Yellow</a>
-                    <a href="?sort=yellow">Red</a>
-                    <a href="?sort=yellow">Green</a>
-                    <a href="?sort=yellow">Orange</a>
+                    <a href="?sort=red">Red</a>
+                    <a href="?sort=green">Green</a>
+                    <a href="?sort=orange">Orange</a>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button>Brand: Any</button>
                 <div class="content">
-                    <a href="?sort=nike">Merrel</a>
+                    <a href="?sort=merrel">Merrel</a>
                     <a href="?sort=adidas">Adidas</a>
-                    <a href="?sort=lacoste">Vans</a>
-                    <a href="?sort=airJordan">Skechers</a>
-                    <a href="?sort=newBalance">Puma</a>
+                    <a href="?sort=vans">Vans</a>
+                    <a href="?sort=skechers">Skechers</a>
+                    <a href="?sort=puma">Puma</a>
                 </div>
             </div>
         </div>
