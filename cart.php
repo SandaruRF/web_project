@@ -87,7 +87,7 @@ if ($result->num_rows > 0) {
     </video>
     <header class="header">
         <div >
-            <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
+            <!-- <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" /> -->
             <img class="image3 logo" id="user"  src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
         </div>
         <div class="topnav">

@@ -277,7 +277,7 @@ $conn->close();
 <script src="validation.js"></script>
 <script>
   const usr = document.getElementById('user');
-  user.addEventListener('click', function() {
+ user.addEventListener('click', function() {
         window.location.href = "userpage.php";
         });  
   let state = false;
