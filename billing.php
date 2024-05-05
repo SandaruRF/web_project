@@ -1,5 +1,12 @@
 <?php
 include "connection.php";
+
+session_start();
+if(!isset($_SESSION['email'])) {
+    header("Location: create.php");
+    exit();
+}
+
 if (isset($_POST['submit'])) {
   $Fname = $_POST['Firstname'];
   $Lname = $_POST['lastname'];
@@ -49,6 +56,21 @@ if (isset($_POST['submit'])) {
   }
 }
 
+$email = $_SESSION['email'];
+
+    $sql = "SELECT firstname, lastname FROM signup WHERE email = '$email'";
+    $result = $conn->query($sql);
+
+    if($result->num_rows >0){
+        $row = $result->fetch_assoc();
+        $firstname = $row['firstname'];
+        $lastname = $row['lastname'];
+    }
+    else{
+        $firstname = "User";
+        $lastname = "";
+    }
+
 $conn->close();
 
 
@@ -67,20 +89,27 @@ $conn->close();
 
 <body>
   <div id="main">
-    <header class="header">
-      <div>
-        <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
-        <img class="image3 logo" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
-      </div>
-      <div class="topnav">
-        <a href="./index.php">Home</a>
-        <a href="#aboutus">About Us</a>
-        <a href="#ourcollection">Products</a>
-        <a href="">FAQ</a>
-        <a href="#footer">Contact Us</a>
-        <a href="./create.php"><img class="login" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
-        <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
-      </div>
+  <header class="header">
+        <div >
+            <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
+            <img class="image3 logo" id="user"  src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+        </div>
+        <div class="topnav">
+            <a href="./userpage.php">Home</a>
+            <a href="./userpage.php#aboutus">About Us</a>
+            <a href="./userpage.php#ourcollection">Products</a>
+            <a href="">FAQ</a>
+            <a href="#footer">Contact Us</a>
+            <a class="dd dropbtn" onclick="dropDown()">
+                    <img class="login"   src="./assets2/9b91e3b2b4b199ba203624dabc95f709%20copy.svg" alt="login" />
+                    <div id="dropOption" class="dropdown-content">
+                        <a href="#"><?php echo $firstname . " " . $lastname; ?>!</h2></a>
+                        <a href="logout.php" id="logOut" >Logout</a>
+                    </div>
+            </a>
+            <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
+          </div>
+           
     </header>
     <div id="Billingform">
 
@@ -246,3 +275,32 @@ $conn->close();
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
 <script src="validation.js"></script>
+<script>
+  let state = false;
+        function dropDown() {
+            if(state==false){
+                state = true;
+                document.getElementById("dropOption").classList.add("show");
+                document.getElementById("dropOption").classList.remove("hide");
+            }else{
+                state = false;
+                document.getElementById("dropOption").classList.add("hide");
+                document.getElementById("dropOption").classList.remove("show");
+            }
+            
+            
+
+            /*window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }*/
+        }
+</script>
