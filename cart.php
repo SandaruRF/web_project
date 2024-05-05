@@ -1,7 +1,11 @@
 <?php
 // Include the database connection file
 include 'connection.php';
-
+session_start();
+if(!isset($_SESSION['email'])) {
+    header("Location: create.php");
+    exit();
+}
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

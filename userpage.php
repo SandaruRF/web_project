@@ -49,9 +49,9 @@ $conn->close();
             <a href="#footer">Contact Us</a>
             <a class="dd dropbtn" onclick="dropDown()">
                     <img class="login"   src="./assets2/9b91e3b2b4b199ba203624dabc95f709%20copy.svg" alt="login" />
-                    <div id="dropOption show" class="dropdown-content">
+                    <div id="dropOption" class="dropdown-content">
                         <a href="#"><?php echo $firstname . " " . $lastname; ?>!</h2></a>
-                        <a href="logout.php" id="logOut">Logout</a>
+                        <a href="logout.php" id="logOut" >Logout</a>
                     </div>
             </a>
             <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
@@ -205,11 +205,21 @@ $conn->close();
         });
 
 
+        let state = false;
         function dropDown() {
-            document.getElementById("dropOption").classList.toggle("show");
+            if(state==false){
+                state = true;
+                document.getElementById("dropOption").classList.add("show");
+                document.getElementById("dropOption").classList.remove("hide");
+            }else{
+                state = false;
+                document.getElementById("dropOption").classList.add("hide");
+                document.getElementById("dropOption").classList.remove("show");
+            }
+            
             
 
-            window.onclick = function(event) {
+            /*window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
@@ -220,7 +230,7 @@ $conn->close();
                 }
                 }
             }
-        }
+        }*/
         }
     </script>
 
