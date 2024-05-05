@@ -220,7 +220,7 @@ body{
         cursor: pointer;
       }
       .rect5:hover{
-        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+        box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
       }
     .tile1{
         position: absolute;
@@ -263,7 +263,7 @@ body{
         cursor: pointer;
         }
         .rect51:hover{
-            box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+            box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
           }
     .tileimage2 {
         position: absolute;
@@ -307,7 +307,7 @@ body{
         cursor: pointer;
         }
     .rect52:hover{
-        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+        box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
         }
     .tileimage3 {
         position: absolute;
@@ -348,7 +348,7 @@ body{
         cursor: pointer;
         }
     .rect53:hover{
-        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+        box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
             }
     .tileimage4 {
         position: absolute;
@@ -389,7 +389,7 @@ body{
         cursor: pointer;
           }
     .rect6:hover{
-    box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+        box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
     }
     .tileimage5 {
         position: absolute;
@@ -433,7 +433,7 @@ body{
         cursor: pointer;
         }
     .rect54:hover{
-        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+        box-shadow: 3px 3px 8px rgba(168, 168, 168, 0.648);
         }
     .tileimage6 {
         top: 329px;
