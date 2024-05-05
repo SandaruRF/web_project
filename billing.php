@@ -69,17 +69,17 @@ $conn->close();
   <div id="main">
     <header class="header">
       <div>
-        <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
-        <img class="image3 logo" id="home" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+        <img class="image2 logo" src="diagonal_white_gradient_bkg.png" alt="alt text" />
+        <img class="image3 logo" src="footprint_brand_logo_blue.png" alt="alt text" />
       </div>
       <div class="topnav">
         <a href="./homepage.php">Home</a>
-        <a href="homepage.php#aboutus">About Us</a>
-        <a href="homepage.php#ourcollection">Products</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#ourcollection">Products</a>
         <a href="">FAQ</a>
-        <a href="homepage.php#footer">Contact Us</a>
-        <a href="./create.php"><img src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
-        <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
+        <a href="#footer">Contact Us</a>
+        <a href="./create.php"><img src="Cart.png.png" alt="alt text" /></a>
+        <a href="./cart.php"><img src="userican.png" alt="alt text" /></a>
       </div>
     </header>
     <div id="Billingform">
@@ -175,17 +175,69 @@ $conn->close();
             <input class="long" type="text" name="nameoncard"required><br>
           </fieldset>
 
-          <input id="button" type="submit" name="submit" value="Pay Now"required>
+          <input id="button" type="submit" name="submit" value="Pay Now">
 
       </form>
     </div>
   </div>
   <div id="roadmap">
-    <h1><img src="assets2/img.jpg" class="img"></h1>
+    <h1><img src="img.jpg" class="img"></h1>
 
 
   </div>
   </div>
+  <footer class="footer" id="footer">
+        <div>
+            <img class="image3 logo1" src="footprint_brand_logo_blue.png" alt="alt text" />
+            <div class="soc"> 
+                <img src="twitter.png">
+                <img id="img2" src="facebook.png">
+                <img id="img3" src="social.png">
+            </div>
+        </div>
+        <div class="links">
+            <h5 class="">Main Links</h5>
+            <a href=""><span >Men&#x27;s</span></a>
+            <a href=""><span>Ladies</span></a>
+            <a href=""><span>Kids</span></a>
+            <a href=""><span>Limited Edition</span></a>
+            <a href=""><span>School Shoes</span></a>
+            <a href=""><span>Flip Flops &amp; Sandals</span></a>
+            <a href=""><span>Accessories</span></a>
+            <a href=""><span>New Arrivals</span></a>
+        </div>  
+        
+        <div class="info">
+            <h5 class="">Company Info</h5>
+            <a href=""><span >About FootPrint</span></a>
+            <a href=""><span>Our Story</span></a>
+            <a href=""><span>Meet the Team</span></a>
+        </div>  
+        
+        
+        <div class="cus">
+            <h5 class="">Customer Support</h5>
+            <a href=""><span >Shipping &amp; Delivery</span></a>
+            <a href=""><span>Returns &amp; Exchanges</span></a>
+        </div>  
+
+        <div class="policy">
+            <a href=""><h5>Privacy Policy</h5></a>
+        </div>
+
+        <div class="copy">
+            <a href=""><h5>© 2024 FootPrint, Inc.</h5></a>
+        </div>
+
+        <div class="cookie">
+            <a href=""><h5>Cookie Policy</h5></a>
+        </div>
+
+        <div class="terms">
+            <a href=""><h5>Terms and Services</h5></a>
+        </div>
+   
+    </footer>
 </body>
 
 </html>
@@ -194,9 +246,3 @@ $conn->close();
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
 <script src="validation.js"></script>
-<script>
-  const home = document.getElementById('home');
-  home.addEventListener('click', function() {
-        window.location.href = "homepage.php";
-        }); 
-</script>
