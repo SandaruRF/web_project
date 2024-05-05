@@ -1,14 +1,15 @@
 /* Apply a purple gradient background to the full page */
 body {
-    background: linear-gradient(to bottom right, #8290a6, #fffcfc);
-    margin: 0;
-    padding: 0;
+   
     font-family: roboto, sans-serif;
     position: relative; /* Make body a positioning context for the divider */
 }
 
 /* Container for the main content */
 .container {
+    left: 13%;
+    top: 220px;
+    position: absolute;
     width: 70%; /* Set the width of the container */
     height: auto;
     margin: 0 auto; /* Center the container horizontally */
@@ -16,8 +17,127 @@ body {
     background-color: #fff5f599;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 75%); /* Add box shadow */
+    min-height: 300px;
+    z-index: 10;
     /* Add padding for spacing on left and right */
 }
+
+
+h1{
+    color: #ffffffe6;
+    left: 70px;
+    top: 92px;
+    position: absolute;
+}
+.header{
+    position: absolute;
+    top: -10px;
+    left: -10px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 70px;
+    padding: 1%;
+    padding-bottom: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    font: 400 18px / 1.16 "Raleway", Helvetica, Arial, serif;
+    background-color: white;
+    width: 96%;
+    
+}
+
+.header img{
+    position: absolute;
+    float: left;
+    height: auto;
+}
+
+.logo{
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+}
+.header .topnav{
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+    padding-right: 1%;
+   
+}
+.header .topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .header .topnav a:hover{
+    color:rgb(179,58,239,1)
+  }
+
+  .header .topnav a img{
+    position: relative;
+    top: -8px;
+  }
+
+
+  .dropbtn {
+    background-color: #ffffff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer !important;;
+}
+
+
+.header .topnav .dropdown-content {
+  position: absolute;
+  background-color: #e26bf196;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 30;
+  top: 75px;
+  right: 1px;
+  display: none;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 30;
+  float: none !important;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.show {display:block !important;
+z-index: 10;}
+.hide{display: none !important;}
+
+.dd{
+  padding: 0 !important;
+  position: relative;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 /* Flex the columns */
 .row {
@@ -93,3 +213,188 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
 }
+
+
+.footer{
+    margin-top: 100%;
+    position: absolute;
+    background-color:#000000;
+    width: 102%;
+    left: -9px;
+    right: 0;
+    height: 405px;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.footer .logo1{
+    position: absolute;
+    top: 50px;
+    padding-left:5% ;
+}
+
+.footer .links{
+    position: absolute;
+    top: 137px;
+    right: 1207.2000732422px;
+    bottom: 22px;
+    left: 588px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 15px "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+
+.footer .links h5{
+    font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 17px;
+}
+
+.footer .info{
+    position: absolute;
+    top: 90px;
+    right: 1207.2000732422px;
+    bottom: 22px;
+    left: 829px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 15px "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+
+.footer .info h5{
+    font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 17px;
+}
+
+.footer .cus{
+    position: absolute;
+    top: 81px;
+    right: 1207.2000732422px;
+    bottom: 22px;
+    left: 1086px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 15px "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+
+.footer .cus h5{
+    font: 800 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 17px;
+}
+
+.footer .policy{
+    position: absolute;
+    top: 360px;
+    left: 1013px;
+    padding-left:5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+.footer .policy h5{
+    font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 15px;
+}
+
+.footer .copy{
+    position: absolute;
+    top: 360px;
+    padding-left:5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+.footer .copy h5{
+    font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 15px;
+}
+
+.footer .cookie{
+    left: 510px;
+    position: absolute;
+    top: 360px;
+    padding-left:5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+.footer .cookie h5{
+    font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 15px;
+}
+.footer .terms{
+    left: 750px;
+    position: absolute;
+    top: 360px;
+    padding-left:5% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 244px;
+    height: 20px;
+    font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+}
+.footer .terms h5{
+    font: 600 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    font-size: 15px;
+}
+.footer span{
+    padding-bottom: 5px;
+}
+.footer .soc img{
+    top:150px ;
+    position: absolute;
+    padding-left: 5%;
+    width: 44px;
+    height: auto;
+}
+.footer #img2{
+    left: 85px;
+}
+
+.footer #img3{
+    left: 163px;
+}
+.footer a{
+    text-decoration: none;
+    color: inherit;
+}
+

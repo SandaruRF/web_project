@@ -52,6 +52,25 @@ if ($result->num_rows > 0) {
         $total_price += $row['quantity'] * $row['price'];
     }
 }
+
+
+
+    $email = $_SESSION['email'];
+
+    $sql = "SELECT firstname, lastname FROM signup WHERE email = '$email'";
+    $result = $conn->query($sql);
+
+    if($result->num_rows >0){
+        $row = $result->fetch_assoc();
+        $firstname = $row['firstname'];
+        $lastname = $row['lastname'];
+    }
+    else{
+        $firstname = "User";
+        $lastname = "";
+    }
+
+    $conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -63,6 +82,31 @@ if ($result->num_rows > 0) {
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
+    <video autoplay muted loop id="myVideo">
+    <source src="assets2/istockphoto-1497685251-640_adpp_is-vmake.mp4">
+    </video>
+    <header class="header">
+        <div >
+            <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
+            <img class="image3 logo" id="user"  src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+        </div>
+        <div class="topnav">
+            <a href="./userpage.php">Home</a>
+            <a href="./userpage.php#aboutus">About Us</a>
+            <a href="./userpage.php#ourcollection">Products</a>
+            <a href="">FAQ</a>
+            <a href="#footer">Contact Us</a>
+            <a class="dd dropbtn" onclick="dropDown()">
+                    <img class="login"   src="./assets2/9b91e3b2b4b199ba203624dabc95f709%20copy.svg" alt="login" />
+                    <div id="dropOption" class="dropdown-content">
+                        <a href="#"><?php echo $firstname . " " . $lastname; ?>!</h2></a>
+                        <a href="logout.php" id="logOut" >Logout</a>
+                    </div>
+            </a>
+            <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
+          </div>
+           
+    </header>
     <h1>Shopping Cart</h1>
     
     <div class="container">
@@ -99,5 +143,87 @@ if ($result->num_rows > 0) {
             </div>    
         </div>
     </div>
+                
+    <footer class="footer" id="footer">
+        <div>
+            <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+            <div class="soc"> 
+                <a href=""><img src="assets2/twitter.png"></a>
+                <a href=""><img id="img2" src="assets2/facebook.png"></a>
+                <a href=""> <img id="img3" src="assets2/social.png"></a>
+            </div>
+        </div>
+        <div class="links">
+            <h5 class="">Main Links</h5>
+            <a href="men's_collection.php"><span >Men&#x27;s</span></a>
+            <a href="women's_collection.php"><span>Women&#x27;s</span></a>
+            <a href="kid's_collection.php"><span>Kid&#x27;s</span></a>  
+            <a href=""><span>Limited Edition</span></a>
+            <a href=""><span>School Shoes</span></a>
+            <a href=""><span>Flip Flops &amp; Sandals</span></a>
+            <a href="accessories_collection.php"><span>Accessories</span></a>
+            <a href=""><span>New Arrivals</span></a>
+        </div>  
+        
+        <div class="info">
+            <h5 class="">Company Info</h5>
+            <a href="#aboutus"><span >About FootPrint</span></a>
+            <a href=""><span>Our Story</span></a>
+            <a href=""><span>Meet the Team</span></a>
+        </div>  
+        
+        
+        <div class="cus">
+            <h5 class="">Customer Support</h5>
+            <a href=""><span >Shipping &amp; Delivery</span></a>
+            <a href=""><span>Returns &amp; Exchanges</span></a>
+        </div>  
+
+        <div class="policy">
+            <a href=""><h5>Privacy Policy</h5></a>
+        </div>
+
+        <div class="copy">
+            <a href=""><h5>© 2024 FootPrint, Inc.</h5></a>
+        </div>
+
+        <div class="cookie">
+            <a href=""><h5>Cookie Policy</h5></a>
+        </div>
+
+        <div class="terms">
+            <a href=""><h5>Terms and Services</h5></a>
+        </div>
+   
+    </footer>
+    <script>
+        let state = false;
+        function dropDown() {
+            if(state==false){
+                state = true;
+                document.getElementById("dropOption").classList.add("show");
+                document.getElementById("dropOption").classList.remove("hide");
+            }else{
+                state = false;
+                document.getElementById("dropOption").classList.add("hide");
+                document.getElementById("dropOption").classList.remove("show");
+            }
+            
+            
+
+            /*window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }*/
+        }
+    </script>
 </body>
 </html>
