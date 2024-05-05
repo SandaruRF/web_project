@@ -276,6 +276,10 @@ $conn->close();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
 <script src="validation.js"></script>
 <script>
+  const usr = document.getElementById('user');
+  user.addEventListener('click', function() {
+        window.location.href = "userpage.php";
+        });  
   let state = false;
         function dropDown() {
             if(state==false){

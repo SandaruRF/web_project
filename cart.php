@@ -197,6 +197,10 @@ if ($result->num_rows > 0) {
    
     </footer>
     <script>
+        const usr = document.getElementById('user');
+        user.addEventListener('click', function() {
+        window.location.href = "userpage.php";
+        });  
         let state = false;
         function dropDown() {
             if(state==false){
