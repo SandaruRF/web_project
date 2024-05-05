@@ -116,7 +116,7 @@ if ($result->num_rows > 0) {
                  <?php
                     foreach ($cart_items as $item) {
                         echo "<div>";
-                        echo "Shoe ID: " . $item["product_id"] . " Shoe Name:" .$item["product_name"]." - Quantity: " . $item["quantity"] . " - Price: $" . $item["price"];
+                        echo "Shoe ID: " . $item["product_id"] . " Shoe Name:" .$item["product_name"]." - Quantity: " . $item["quantity"] . " - Price: Rs." . $item["price"];
                         // Form for decrementing quantity
                         echo "<form method='POST'>";
                         echo "<input type='hidden' name='product_id' value='{$item['product_id']}'>"; // Changed name to product_id
@@ -130,7 +130,7 @@ if ($result->num_rows > 0) {
             </div>
             <div class="col-2">
                 <div id="total-price">
-                  <?php echo "Total: $" . number_format($total_price, 2); ?>
+                  <?php echo "Total: Rs." . number_format($total_price, 2); ?>
                 </div>
                 
                 <div id="bill">
