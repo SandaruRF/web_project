@@ -29,7 +29,7 @@
         $sortOrder = "AND color1='blue' OR color2='blue'";
     }
 
-    $sql = "SELECT * FROM product WHERE product_id BETWEEN 1 AND 10 $sortOrder";
+    $sql = "SELECT * FROM product WHERE product_id BETWEEN 22 AND 33 $sortOrder";
     $all_product = $conn->query($sql);
 ?>
 
@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Men's Shoes & Sneakers</title>
+    <title>Kid's Shoes & Sneakers</title>
 </head>
 <body>
     <header class="header1">
@@ -57,13 +57,13 @@
             <a href="homepage.php#ourcollection">Products</a>
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
-            <a href="./create.php"><img id="user user1" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text"/></a>
-            <a href="./cart.php"><img id="cart cart1" src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
+            <a href="./create.php"><img id="user" src="imgs/user.png" alt="alt text"/></a>
+            <a href="./cart.php"><img id="cart" src="imgs/cart.png" alt="alt text"/></a>
         </div>
     </header>
 
     <div class="header">
-        <h1>Men's Shoes & Sneakers</h1>
+        <h1>Kid's Shoes & Sneakers</h1>
     </div>
 
     <div class="sort">
@@ -138,7 +138,7 @@
         ?>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" style="top: 3000px;">
         <div>
             <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
             <div class="soc"> 
