@@ -389,15 +389,15 @@ CREATE TABLE `signup` (
 -- Dumping data for table `signup`
 --
 
-INSERT INTO `signup` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
-(32, 'qwerty', 'romina', 'a@g.com', '$2y$10$6N9'),
-(33, 'abc', 'romina', 'b@g.com', '123'),
-(34, 'sehara', 'Fernando', 'sehara@gmail.com', 'abc@123'),
-(35, 'Saman', 'Perera', 's@gmail.com', '?C1??8??*?'),
-(36, 'Kasun', 'Perera', 'k@gmail.com', '%???2;E8??'),
-(37, 'Tharuka', 'Prabhashana', 'tp@gmail.com', 'b24331b1a1'),
-(38, 'Divan', 'Sathsara', 'ds@gmail.com', 'b24331b1a138cde62aa1f679164fc62f'),
-(39, 'Shiny', 'Fernando', 'shinyfernando719@gmail.com', 'e10adc3949ba59abbe56e057f20f883e');
+-- INSERT INTO `signup` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
+-- (32, 'qwerty', 'romina', 'a@g.com', '$2y$10$6N9'),
+-- (33, 'abc', 'romina', 'b@g.com', '123'),
+-- (34, 'sehara', 'Fernando', 'sehara@gmail.com', 'abc@123'),
+-- (35, 'Saman', 'Perera', 's@gmail.com', '?C1??8??*?'),
+-- (36, 'Kasun', 'Perera', 'k@gmail.com', '%???2;E8??'),
+-- (37, 'Tharuka', 'Prabhashana', 'tp@gmail.com', 'b24331b1a1'),
+-- (38, 'Divan', 'Sathsara', 'ds@gmail.com', 'b24331b1a138cde62aa1f679164fc62f'),
+-- (39, 'Shiny', 'Fernando', 'shinyfernando719@gmail.com', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Indexes for dumped tables
