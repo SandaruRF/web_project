@@ -10,9 +10,9 @@ if(!isset($_SESSION['email'])) {
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the form data is set
-    if (isset($_POST['shoe_id']) && isset($_POST['quantity'])) {
+    if (isset($_POST['product_id']) && isset($_POST['quantity'])) {
         // Sanitize form data
-        $shoe_id = intval($_POST['shoe_id']);
+        $product_id = intval($_POST['product_id']);
         $quantity = intval($_POST['quantity']);
 
         // Decrement the quantity by 1
@@ -21,19 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Check if the quantity becomes zero
         if ($quantity <= 0) {
             // Delete the item from the database
-            $sql = "DELETE FROM cart WHERE shoe_id = $shoe_id";
+            $sql = "DELETE FROM cart WHERE product_id = $product_id"; // Error line: 29
         } else {
             // Update the quantity in the database
-            $sql = "UPDATE cart SET quantity = $quantity WHERE shoe_id = $shoe_id";
+            $sql = "UPDATE cart SET quantity = $quantity WHERE product_id = $product_id"; // Error line: 33
         }
 
         // Execute the SQL query
-        if ($conn->query($sql) === TRUE) {
+        if ($conn->query($sql) === TRUE) { // Error line: 37
             // Redirect to the same page to refresh the cart
             header("Location: {$_SERVER['PHP_SELF']}");
             exit();
         } else {
-            echo "Error updating quantity: " . $mysqli->error;
+            echo "Error updating quantity: " . $conn->error; // Error line: 42
         }
     }
 }
@@ -72,10 +72,10 @@ if ($result->num_rows > 0) {
                  <?php
                     foreach ($cart_items as $item) {
                         echo "<div>";
-                        echo "Shoe ID: " . $item["shoe_id"] . " - Quantity: " . $item["quantity"] . " - Price: $" . $item["price"];
+                        echo "Shoe ID: " . $item["product_id"] . " Shoe Name:" .$item["product_name"]." - Quantity: " . $item["quantity"] . " - Price: $" . $item["price"];
                         // Form for decrementing quantity
                         echo "<form method='POST'>";
-                        echo "<input type='hidden' name='shoe_id' value='{$item['shoe_id']}'>";
+                        echo "<input type='hidden' name='product_id' value='{$item['product_id']}'>"; // Changed name to product_id
                         echo "<input type='hidden' name='quantity' value='{$item['quantity']}'>";
                         echo "<button type='submit'>Remove One</button>";
                         echo "</form>";
