@@ -138,7 +138,7 @@
         ?>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" style="top: 2600px;">
         <div>
             <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
             <div class="soc"> 
@@ -150,8 +150,8 @@
         <div class="links">
             <h5 class="">Main Links</h5>
             <a href="men's_collection.php"><span >Men&#x27;s</span></a>
-            <a href="women's_collection.php"><span>Ladies</span></a>
-            <a href="kids_collection.php"><span>Kids</span></a>
+            <a href="women's_collection.php"><span>Women&#x27;s</span></a>
+            <a href="kids_collection.php"><span>Kid&#x27;s</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>

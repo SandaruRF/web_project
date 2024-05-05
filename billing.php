@@ -197,9 +197,9 @@ $conn->close();
         </div>
         <div class="links">
             <h5 class="">Main Links</h5>
-            <a href=""><span >Men&#x27;s</span></a>
-            <a href=""><span>Ladies</span></a>
-            <a href=""><span>Kids</span></a>
+            <a href="men's_collection.php"><span >Men&#x27;s</span></a>
+            <a href="women's_collection.php"><span>Women&#x27;s</span></a>
+            <a href="kids_collection.php"><span>Kid&#x27;s</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>

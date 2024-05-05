@@ -64,11 +64,6 @@
 
     <div class="header">
         <h1>Accessories</h1>
-        <p>Life's a journey, and your shoes should be ready for wherever it takes you. 
-            Here at FootPrint, we've curated a diverse collection of men's footwear designed 
-            to keep you comfortable and confident, no matter the destination. From sleek 
-            dress shoes for the office to rugged boots for conquering the outdoors, we 
-            have the perfect pair to match your style and needs.</p>
     </div>
 
     <div class="sort">
@@ -143,7 +138,7 @@
         ?>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" style="top: 3000px;">
         <div>
             <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
             <div class="soc"> 
@@ -155,8 +150,8 @@
         <div class="links">
             <h5 class="">Main Links</h5>
             <a href="men's_collection.php"><span >Men&#x27;s</span></a>
-            <a href="women's_collection.php"><span>Ladies</span></a>
-            <a href="kids_collection.php"><span>Kids</span></a>
+            <a href="women's_collection.php"><span>Women&#x27;s</span></a>
+            <a href="kids_collection.php"><span>Kid&#x27;s</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>

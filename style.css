@@ -85,6 +85,7 @@ html {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    margin-top: 70px;
 }
 
 .sort .dropdown button{
