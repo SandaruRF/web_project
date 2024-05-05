@@ -69,8 +69,8 @@ $conn->close();
   <div id="main">
     <header class="header">
       <div>
-        <img class="image2 logo" src="diagonal_white_gradient_bkg.png" alt="alt text" />
-        <img class="image3 logo" src="footprint_brand_logo_blue.png" alt="alt text" />
+        <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
+        <img class="image3 logo" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
       </div>
       <div class="topnav">
         <a href="./homepage.php">Home</a>
@@ -78,8 +78,8 @@ $conn->close();
         <a href="#ourcollection">Products</a>
         <a href="">FAQ</a>
         <a href="#footer">Contact Us</a>
-        <a href="./create.php"><img src="Cart.png.png" alt="alt text" /></a>
-        <a href="./cart.php"><img src="userican.png" alt="alt text" /></a>
+        <a href="./create.php"><img src="./assets2/9b91e3b2b4b199ba203624dabc95f709%20copy.svg" alt="alt text" /></a>
+        <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
       </div>
     </header>
     <div id="Billingform">
@@ -181,18 +181,18 @@ $conn->close();
     </div>
   </div>
   <div id="roadmap">
-    <h1><img src="img.jpg" class="img"></h1>
+    <h1><img src="./assets2/img.jpg" class="img"></h1>
 
 
   </div>
   </div>
   <footer class="footer" id="footer">
         <div>
-            <img class="image3 logo1" src="footprint_brand_logo_blue.png" alt="alt text" />
+            <img class="image3 logo1" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
             <div class="soc"> 
-                <img src="twitter.png">
-                <img id="img2" src="facebook.png">
-                <img id="img3" src="social.png">
+                <img src="./assets2/twitter.png">
+                <img id="img2" src="./assets2/facebook.png">
+                <img id="img3" src="./assets2/social.png">
             </div>
         </div>
         <div class="links">
