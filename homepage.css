@@ -36,6 +36,7 @@ body{
 .logo{
     width: 15%;
     height: auto;
+    cursor: pointer;
 }
 .header .topnav{
     display: inline-flex;
@@ -197,10 +198,9 @@ body{
     }
     .rect4{
         position: absolute;
-        top: 114px;
+        top: 146px;
         width: 1510px;
         height: auto;
-        /* background-color: red; */
 
     }
 
@@ -220,9 +220,11 @@ body{
         border-radius: 8px 8px 8px 8px;
         cursor: pointer;
       }
+      .rect5:hover{
+        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+      }
 
-      
-      .tile1{
+    .tile1{
         position: absolute;
         top: 325px;
         right: 1133.2000732422px;
@@ -262,6 +264,9 @@ body{
         transform: translate(-50%, 0);
         cursor: pointer;
         }
+        .rect51:hover{
+            box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+          }
     .tileimage2 {
         position: absolute;
         top: 0px;
@@ -269,8 +274,8 @@ body{
         left: 50%;
         width: 348px;
         height: 345px;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: contain;
+        object-fit: contain;
         transform: translate(-50%, 0);
         cursor: pointer;
         }
@@ -302,16 +307,18 @@ body{
         background-color: white;
         border-radius: 8px 8px 8px 8px;
         cursor: pointer;
-        cursor: pointer;
+        }
+    .rect52:hover{
+        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
         }
     .tileimage3 {
         position: absolute;
-        top: 0px;
+        top: 34px;
         bottom: 1298px;
         width: 348px;
         height: 345px;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: contain;
+        object-fit: contain;
         cursor: pointer;
         }
     .tile3 {
@@ -331,7 +338,7 @@ body{
         }
 
     .rect53 {
-        top: 428px;
+        top: 442px;
         position: absolute;
         right: 1084.2000732422px;
         bottom: 597px;
@@ -341,6 +348,9 @@ body{
         background-color: white;
         border-radius: 8px 8px 8px 8px;
         cursor: pointer;
+        }
+    .rect53:hover{
+        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
         }
     .tileimage4 {
         position: absolute;
@@ -369,7 +379,7 @@ body{
         }
 
     .rect6 {
-        top: 427px;
+        top: 441px;
         position: absolute;
         bottom: 597px;
         left: 50%;
@@ -380,6 +390,9 @@ body{
         transform: translate(-50%, 0);
         cursor: pointer;
           }
+    .rect6:hover{
+    box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
+    }
     .tileimage5 {
         position: absolute;
         top: 329px;
@@ -396,21 +409,21 @@ body{
         text-align: center;
         cursor: pointer;
     }
-     .image9 {
+     .tile5 {
         position: absolute;
-        top: 3134px;
+        top: 7px;
         bottom: 725px;
         left: 50%;
         width: 348px;
         height: 361px;
-        -o-object-fit: cover;
-        object-fit: cover;
+        -o-object-fit: contain;
+        object-fit: contain;
         transform: translate(-50%, 0);
         cursor: pointer;
         }
 
     .rect54 {
-        top: 428px;
+        top: 442px;
         position: absolute;
         right: 80.2000732422px;
         bottom: 597px;
@@ -420,6 +433,9 @@ body{
         background-color: white;
         border-radius: 8px 8px 8px 8px;
         cursor: pointer;
+        }
+    .rect54:hover{
+        box-shadow: 0px 8px 16px 0px rgb(179, 58, 239, 1);
         }
     .tileimage6 {
         top: 329px;

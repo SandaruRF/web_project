@@ -2,6 +2,7 @@
 // Include the database connection file
 include 'connection.php';
 
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the form data is set
@@ -55,7 +56,7 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <h1>Shopping Cart</h1>

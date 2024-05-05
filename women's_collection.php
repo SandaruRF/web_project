@@ -49,12 +49,12 @@
     <header class="header1">
         <div >
             <img class="image2 logo" src="imgs/diagonal_white_gradient_bkg.png" alt="alt text" />
-            <img class="image3 logo" src="imgs/footprint_brand_logo_blue.png" alt="alt text" />
+            <img class="image3 logo" id="home" src="imgs/footprint_brand_logo_blue.png" alt="alt text" />
         </div>
         <div class="topnav">
             <a href="./homepage.php">Home</a>
-            <a href="#aboutus">About Us</a>
-            <a href="#ourcollection">Products</a>
+            <a href="homepage.php#aboutus">About Us</a>
+            <a href="homepage.php#ourcollection">Products</a>
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
             <a href="./create.php"><img id="user" src="imgs/user.png" alt="alt text"/></a>
@@ -154,19 +154,19 @@
         </div>
         <div class="links">
             <h5 class="">Main Links</h5>
-            <a href=""><span >Men&#x27;s</span></a>
-            <a href=""><span>Ladies</span></a>
-            <a href=""><span>Kids</span></a>
+            <a href="men's_collection.php"><span >Men&#x27;s</span></a>
+            <a href="women's_collection.php"><span>Ladies</span></a>
+            <a href="kids_collection.php"><span>Kids</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>
-            <a href=""><span>Accessories</span></a>
+            <a href="accessories_collection.php"><span>Accessories</span></a>
             <a href=""><span>New Arrivals</span></a>
         </div>  
 
         <div class="info">
             <h5 class="">Company Info</h5>
-            <a href=""><span >About FootPrint</span></a>
+            <a href="homepage.php#aboutus"><span >About FootPrint</span></a>
             <a href=""><span>Our Story</span></a>
             <a href=""><span>Meet the Team</span></a>
         </div>  
@@ -207,6 +207,11 @@
                 })
             })
         })
+
+        const home = document.getElementById('home');
+        home.addEventListener('click', function() {
+        window.location.href = "homepage.php";
+        }); 
     </script>
 </body>
 </html>

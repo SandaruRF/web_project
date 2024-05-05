@@ -15,7 +15,7 @@ $conn->close();
     <header class="header">
         <div >
             <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
-            <img class="image3 logo" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+            <img class="image3 logo" id="home" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
         </div>
         <div class="topnav">
             <a href="./homepage.php">Home</a>
@@ -24,7 +24,7 @@ $conn->close();
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
             <a href="./create.php"><img class="login" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
-            <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
+            <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
           </div>
     </header>
     
@@ -59,24 +59,24 @@ $conn->close();
         <h1 class="colTitle">Our Collection</h1>
         <div class="rect4">
             <div class="rect5" id="mens">
-                <img class="tileimage1" src="./assets2/light_blue_sneakers_side_view.png" alt="alt text" />
+                <img class="tileimage1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQf6xjKGh-M8G4r3KqbK0ANDnU1E_WCZQSJnI8I3zEmTp8BUWxwl5w-13kz8m9l7EwI0&usqp=CAU"  alt="alt text" />
                 <h1 class="tile1">Men's Collection</h1>
             </div>
             <div class="rect51" id="womens">
-                <img class="tileimage2" src="./assets2/classic_white_sneakers_side_view.png" alt="alt text" />
+                <img class="tileimage2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWu_9A3SYwnclx45iWr6I4BeeC2cfZLNn68nzgWsS2xDElQUz5jj5Ie1hezYwaJUFZmS4&usqp=CAU" alt="alt text" />
                 <h1 class="tile2">Women's Collection</h1>
             </div>
             <div class="rect52" id="kids">
-                <img class="tileimage3" src="./assets2/olive_green_sneakers_side_view.png" alt="alt text" />
+                <img class="tileimage3" src="https://img.tatacliq.com/images/i3/437Wx649H/MP000000003609424_437Wx649H_20180906085331.jpeg" alt="alt text" />
                 <h1 class="tile3">Kids Collection</h1>
             </div>
             <div class="rect53" id="flips">
                 <h1 class="tileimage4">Flip Flops &amp; Sandals</h1>
-                <img class="tile4" src="./assets2/blue_sneakers_isolated.png" alt="alt text" />
+                <img class="tile4" src="https://assets.ajio.com/medias/sys_master/root/20230629/ImxV/649ce961eebac147fc3593fc/-473Wx593H-466011327-aqua-MODEL.jpg" alt="alt text" />
             </div>
             <div class="rect6" id="acc">
                 <h1 class="tileimage5">Accessories</h1>
-                <img class="tile5" src="./assets2/striped_white_sneakers_isolated.png" alt="alt text" />
+                <img class="tile5" src="https://thumbs.dreamstime.com/b/set-short-socks-white-grey-black-isolated-white-background-three-pair-socks-set-short-socks-white-grey-black-isolated-208760863.jpg" alt="alt text" />
             </div>
             <div class="rect54" id="limited">
                 <img class="tileimage6" src="./assets2/greenish_sneakers_isolated.png" alt="alt text" />
@@ -95,19 +95,19 @@ $conn->close();
         </div>
         <div class="links">
             <h5 class="">Main Links</h5>
-            <a href=""><span >Men&#x27;s</span></a>
-            <a href=""><span>Ladies</span></a>
-            <a href=""><span>Kids</span></a>
+            <a href="men's_collection.php"><span >Men&#x27;s</span></a>
+            <a href="women's_collection.php"><span>Ladies</span></a>
+            <a href="kids_collection.php"><span>Kids</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>
-            <a href=""><span>Accessories</span></a>
+            <a href="accessories_collection.php"><span>Accessories</span></a>
             <a href=""><span>New Arrivals</span></a>
         </div>  
         
         <div class="info">
             <h5 class="">Company Info</h5>
-            <a href=""><span >About FootPrint</span></a>
+            <a href="#aboutus"><span >About FootPrint</span></a>
             <a href=""><span>Our Story</span></a>
             <a href=""><span>Meet the Team</span></a>
         </div>  
@@ -137,7 +137,7 @@ $conn->close();
     
     </footer>
     <script>
-        // Get a reference to the div element
+        const home = document.getElementById('home');
         const mens = document.getElementById('mens');
         const womens = document.getElementById('womens');
         const kids = document.getElementById('kids');
@@ -145,25 +145,24 @@ $conn->close();
         const acc = document.getElementById('acc');
         const limited = document.getElementById('limited');
 
-        // Add a click event listener to the div
+       
+        home.addEventListener('click', function() {
+        window.location.href = "homepage.php";
+        }); 
         mens.addEventListener('click', function() {
-        // Redirect to the desired location
         window.location.href = "men's_collection.php";
         });
 
         womens.addEventListener('click', function() {
-        // Redirect to the desired location
         window.location.href = "women's_collection.php";
         });
 
 
         kids.addEventListener('click', function() {
-        // Redirect to the desired location
         window.location.href = "kids's_collection.php";
         });
 
         acc.addEventListener('click', function() {
-        // Redirect to the desired location
         window.location.href = "accessories's_collection.php";
         });
     </script>

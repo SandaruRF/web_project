@@ -382,6 +382,7 @@ form .counter_btn .counter input{
     width: 44px;
     height: 40px;
 }
+
 #user:hover{
     content: url(imgs/user_p.png);
 }
@@ -445,7 +446,7 @@ form .counter_btn .counter input{
 
 .footer{
 position: absolute;
-top:2250px;
+top:700px;
 bottom: 0;
 background-color:#000000;
 width: 100%;

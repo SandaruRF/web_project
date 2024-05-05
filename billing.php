@@ -70,15 +70,15 @@ $conn->close();
     <header class="header">
       <div>
         <img class="image2 logo" src="./assets2/diagonal_white_gradient_bkg.png" alt="alt text" />
-        <img class="image3 logo" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
+        <img class="image3 logo" id="home" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
       </div>
       <div class="topnav">
         <a href="./homepage.php">Home</a>
-        <a href="#aboutus">About Us</a>
-        <a href="#ourcollection">Products</a>
+        <a href="homepage.php#aboutus">About Us</a>
+        <a href="homepage.php#ourcollection">Products</a>
         <a href="">FAQ</a>
-        <a href="#footer">Contact Us</a>
-        <a href="./create.php"><img src="./assets2/9b91e3b2b4b199ba203624dabc95f709.png" alt="alt text" /></a>
+        <a href="homepage.php#footer">Contact Us</a>
+        <a href="./create.php"><img src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
         <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
       </div>
     </header>
@@ -194,3 +194,9 @@ $conn->close();
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
 <script src="validation.js"></script>
+<script>
+  const home = document.getElementById('home');
+  home.addEventListener('click', function() {
+        window.location.href = "homepage.php";
+        }); 
+</script>

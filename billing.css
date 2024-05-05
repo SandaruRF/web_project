@@ -106,8 +106,10 @@ fieldset {
     position: fixed;
     top:0px;
     height:10vh;
-    width:100%;
+    width:94%;
     z-index: 1;
+    left: 0;
+    right: 0;
 
 }
 
