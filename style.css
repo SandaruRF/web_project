@@ -371,24 +371,17 @@ form .counter_btn .counter input{
     height: auto;
 }
 
-#cart,
-#user{
-    width: 40px;
-}
-#user1{
-    width: 46px;
-    height: 46px;
-}
 #cart1{
     width: 44px;
     height: 40px;
 }
 #user:hover{
-    content: url(imgs/user_p.png);
+    content: url(./assets2/9b91e3b2b4b199ba203624dabc95f709\ copy\ -\ Copy.svg);
 }
 
 #cart:hover{
     content: url(imgs/cart_p.png);
+    width: 44px;
 }
 
 .logo{
@@ -413,7 +406,7 @@ form .counter_btn .counter input{
   }
 
   .header1 .topnav a:hover{
-    color:rgb(179,58,239,1)
+    color:rgb(179,58,239,1);
   }
 
   .header1 .topnav a img{

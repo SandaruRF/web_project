@@ -647,3 +647,12 @@ body{
         color: inherit;
     }
    
+
+    #user:hover{
+        content: url(./assets2/9b91e3b2b4b199ba203624dabc95f709\ copy\ -\ Copy.svg);
+    }
+    
+    #cart:hover{
+        content: url(imgs/cart_p.png);
+        width: 44px;
+    }

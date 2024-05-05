@@ -57,8 +57,8 @@
             <a href="index.php#ourcollection">Products</a>
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
-            <a href="./create.php"><img id="user" src="imgs/user.png" alt="alt text"/></a>
-            <a href="./cart.php"><img id="cart" src="imgs/cart.png" alt="alt text"/></a>
+            <a href="./create.php"><img class="login" id="user" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
+            <a href="./cart.php"><img id="cart" src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
         </div>
     </header>
 
