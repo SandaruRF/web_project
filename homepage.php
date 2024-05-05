@@ -97,7 +97,7 @@ $conn->close();
             <h5 class="">Main Links</h5>
             <a href="men's_collection.php"><span >Men&#x27;s</span></a>
             <a href="women's_collection.php"><span>Ladies</span></a>
-            <a href="kids_collection.php"><span>Kids</span></a>
+            <a href="kid's_collection.php"><span>Kids</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>
@@ -159,11 +159,11 @@ $conn->close();
 
 
         kids.addEventListener('click', function() {
-        window.location.href = "kids's_collection.php";
+        window.location.href = "kid's_collection.php";
         });
 
         acc.addEventListener('click', function() {
-        window.location.href = "accessories's_collection.php";
+        window.location.href = "accessories_collection.php";
         });
     </script>
 </body>

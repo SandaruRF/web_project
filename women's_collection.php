@@ -29,7 +29,7 @@
         $sortOrder = "AND color1='blue' OR color2='blue'";
     }
 
-    $sql = "SELECT * FROM product WHERE product_id BETWEEN 1 AND 10 $sortOrder";
+    $sql = "SELECT * FROM product WHERE product_id BETWEEN 12 AND 21 $sortOrder";
     $all_product = $conn->query($sql);
 ?>
 
@@ -64,11 +64,6 @@
 
     <div class="header">
         <h1>Women's Shoes & Sneakers</h1>
-        <p>Life's a journey, and your shoes should be ready for wherever it takes you. 
-            Here at FootPrint, we've curated a diverse collection of men's footwear designed 
-            to keep you comfortable and confident, no matter the destination. From sleek 
-            dress shoes for the office to rugged boots for conquering the outdoors, we 
-            have the perfect pair to match your style and needs.</p>
     </div>
 
     <div class="sort">
