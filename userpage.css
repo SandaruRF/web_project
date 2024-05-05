@@ -71,7 +71,8 @@ body{
   }
   .discover{
     position: absolute;
-    top: 651px;
+    top: 629px;
+    z-index: -1;
     width: 1513px;
     object-fit: cover;
     height: 100%;

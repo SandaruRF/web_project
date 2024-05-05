@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once 'connection.php';
+include 'connection.php';
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: {$_SERVER['PHP_SELF']}");
             exit();
         } else {
-            echo "Error updating quantity: " . $conn->error;
+            echo "Error updating quantity: " . $mysqli->error;
         }
     }
 }
@@ -55,36 +55,44 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
     <h1>Shopping Cart</h1>
     
-    <div id="cart-items">
-        <?php
-        foreach ($cart_items as $item) {
-            echo "<div>";
-            echo "Shoe ID: " . $item["shoe_id"] . " - Quantity: " . $item["quantity"] . " - Price: $" . $item["price"];
-            // Form for decrementing quantity
-            echo "<form method='POST'>";
-            echo "<input type='hidden' name='shoe_id' value='{$item['shoe_id']}'>";
-            echo "<input type='hidden' name='quantity' value='{$item['quantity']}'>";
-            echo "<button type='submit'>Remove One</button>";
-            echo "</form>";
-            echo "</div>";
-        }
-        ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+               <div id="cart-items">
+                 <?php
+                    foreach ($cart_items as $item) {
+                        echo "<div>";
+                        echo "Shoe ID: " . $item["shoe_id"] . " - Quantity: " . $item["quantity"] . " - Price: $" . $item["price"];
+                        // Form for decrementing quantity
+                        echo "<form method='POST'>";
+                        echo "<input type='hidden' name='shoe_id' value='{$item['shoe_id']}'>";
+                        echo "<input type='hidden' name='quantity' value='{$item['quantity']}'>";
+                        echo "<button type='submit'>Remove One</button>";
+                        echo "</form>";
+                        echo "</div>";
+                    }
+                 ?>
+               </div>
+            </div>
+            <div class="col-2">
+                <div id="total-price">
+                  <?php echo "Total: $" . number_format($total_price, 2); ?>
+                </div>
+                
+                <div id="bill">
+                   <form action="billing.php" method="post">
+                      <input type="hidden" name="total_price" value="<?php echo $total_price; ?>">
+                    <button type="submit">Checkout</button>
+                   </form>
+                </div> 
+
+            </div>    
+        </div>
     </div>
-
-    <div id="total-price">
-        <?php echo "Total: $" . number_format($total_price, 2); ?>
-    </div>
-
-    <form action="billing.php" method="get">
-        <input type="hidden" name="total price" value="<?php echo $total_price; ?>">
-        <button type="submit">Checkout</button>
-    </form>
-
-    
 </body>
 </html>

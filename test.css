@@ -1,0 +1,89 @@
+/* Apply a purple gradient background to the full page */
+body {
+    background: linear-gradient(to bottom right, #3d393f, #ebebeb);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Make body a positioning context for the divider */
+}
+
+/* Container for the main content */
+.container {
+    width:100%;
+    height:auto;
+}
+
+/* Flex the columns */
+.row {
+    display: flex;
+}
+
+/* Each column takes half of the width */
+.col-2 {
+    flex-basis: 50%;
+}
+
+/* Styles for the cart items */
+#cart-items {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+/* Styles for each cart item */
+#cart-items > div {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the 'Remove One' button */
+#cart-items form button {
+    background-color: #ff0000; /* Red color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the 'Remove One' button */
+#cart-items form button:hover {
+    background-color: #cc0000; /* Darker red color on hover */
+}
+
+/* Styles for the total price container */
+#total-price {
+    padding: 20px;
+    text-align: center;
+    background-color: #6abf69;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+/* Styles for the total price label */
+#total-price-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styles for the total price value */
+#total-price-value {
+    font-size: 24px;
+}
+
+#bill form button {
+    width: 100%; /* Full width button */
+    padding: 20px;
+    text-align: center;
+    background-color: #232423;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
