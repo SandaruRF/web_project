@@ -18,21 +18,21 @@
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'puma') {
         $sortOrder = "AND brand='puma'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'white') {
-        $sortOrder = "AND color1='white' OR color2='white'";
+        $sortOrder = "AND (color1='white' OR color2='white')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'black') {
-        $sortOrder = "AND color1='black' OR color2='black'";
+        $sortOrder = "AND (color1='black' OR color2='black')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'pink') {
-        $sortOrder = "AND color1='pink' OR color2='pink'";
+        $sortOrder = "AND (color1='pink' OR color2='pink')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'yellow') {
-        $sortOrder = "AND color1='yellow' OR color2='yellow'";
+        $sortOrder = "AND (color1='yellow' OR color2='yellow')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'gold') {
-        $sortOrder = "AND color1='gold' OR color2='gold'";
+        $sortOrder = "AND (color1='gold' OR color2='gold')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'red') {
-        $sortOrder = "AND color1='red' OR color2='red'";
+        $sortOrder = "AND (color1='red' OR color2='red')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'green') {
-        $sortOrder = "AND color1='green' OR color2='green'";
+        $sortOrder = "AND (color1='green' OR color2='green')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'orange') {
-        $sortOrder = "AND color1='orange' OR color2='orange'";
+        $sortOrder = "AND (color1='orange' OR color2='orange')";
     }
 
     $sql = "SELECT * FROM product WHERE product_id BETWEEN 22 AND 33 $sortOrder";

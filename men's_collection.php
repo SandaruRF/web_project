@@ -18,15 +18,15 @@
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'airJordan') {
         $sortOrder = "AND brand='Air Jordan'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'white') {
-        $sortOrder = "AND color1='white' OR color2='white'";
+        $sortOrder = "AND (color1='white' OR color2='white')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'black') {
-        $sortOrder = "AND color1='black' OR color2='black'";
+        $sortOrder = "AND (color1='black' OR color2='black')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'green') {
-        $sortOrder = "AND color1='green' OR color2='green'";
+        $sortOrder = "AND (color1='green' OR color2='green')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'yellow') {
-        $sortOrder = "AND color1='yellow' OR color2='yellow'";
+        $sortOrder = "AND (color1='yellow' OR color2='yellow')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'blue') {
-        $sortOrder = "AND color1='blue' OR color2='blue'";
+        $sortOrder = "AND (color1='blue' OR color2='blue')";
     }
 
     $sql = "SELECT * FROM product WHERE product_id BETWEEN 1 AND 10 $sortOrder";
