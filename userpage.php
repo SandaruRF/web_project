@@ -48,7 +48,7 @@ $conn->close();
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
             <a class="dd dropbtn" onclick="dropDown()">
-                    <img class="login"   src="./assets2/9b91e3b2b4b199ba203624dabc95f709%20copy.svg" alt="login" />
+                    <img class="login"   src="./assets2/9b91e3b2b4b199ba203624dabc95f709 copy - Copy.svg" alt="login" />
                     <div id="dropOption" class="dropdown-content">
                         <a href="#"><?php echo $firstname . " " . $lastname; ?>!</h2></a>
                         <a href="logout.php" id="logOut" >Logout</a>
@@ -197,11 +197,11 @@ $conn->close();
 
 
         kids.addEventListener('click', function() {
-        window.location.href = "kids's_collection.php";
+        window.location.href = "kid's_collection.php";
         });
 
         acc.addEventListener('click', function() {
-        window.location.href = "accessories's_collection.php";
+        window.location.href = "accessories_collection.php";
         });
 
 

@@ -370,10 +370,6 @@ form .counter_btn .counter input{
     height: auto;
 }
 
-#cart,
-#user{
-    width: 40px;
-}
 #user1{
     width: 46px;
     height: 46px;
@@ -384,11 +380,12 @@ form .counter_btn .counter input{
 }
 
 #user:hover{
-    content: url(imgs/user_p.png);
+    content: url(./assets2/9b91e3b2b4b199ba203624dabc95f709\ copy\ -\ Copy.svg);
 }
 
 #cart:hover{
     content: url(imgs/cart_p.png);
+    width: 44px;
 }
 
 .logo{

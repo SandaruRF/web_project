@@ -57,8 +57,8 @@
             <a href="index.php#ourcollection">Products</a>
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
-            <a href="./create.php"><img id="user" src="imgs/user.png" alt="alt text"/></a>
-            <a href="./cart.php"><img id="cart" src="imgs/cart.png" alt="alt text"/></a>
+            <a href="./create.php"><img class="login" id="user" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
+            <a href="./cart.php"><img id="cart" src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
         </div>
     </header>
 
@@ -84,20 +84,23 @@
                 <div class="content">
                     <a href="?sort=white">White</a>
                     <a href="?sort=black">Black</a>
-                    <a href="?sort=blue">Blue</a>
-                    <a href="?sort=green">Green</a>
+                    <a href="?sort=blue">Pink</a>
+                    <a href="?sort=green">Gold</a>
                     <a href="?sort=yellow">Yellow</a>
+                    <a href="?sort=yellow">Red</a>
+                    <a href="?sort=yellow">Green</a>
+                    <a href="?sort=yellow">Orange</a>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button>Brand: Any</button>
                 <div class="content">
-                    <a href="?sort=nike">Nike</a>
+                    <a href="?sort=nike">Merrel</a>
                     <a href="?sort=adidas">Adidas</a>
-                    <a href="?sort=lacoste">Lacoste</a>
-                    <a href="?sort=airJordan">Air Jordan</a>
-                    <a href="?sort=newBalance">New Balance</a>
+                    <a href="?sort=lacoste">Vans</a>
+                    <a href="?sort=airJordan">Skechers</a>
+                    <a href="?sort=newBalance">Puma</a>
                 </div>
             </div>
         </div>
