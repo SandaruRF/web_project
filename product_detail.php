@@ -55,9 +55,9 @@ if (isset($_POST["add-to-cart"])) {
             <img class="image3 logo" id="home" src="imgs/footprint_brand_logo_blue.png" alt="alt text" />
         </div>
         <div class="topnav">
-            <a href="./homepage.php">Home</a>
-            <a href="homepage.php#aboutus">About Us</a>
-            <a href="homepage.php#ourcollection">Products</a>
+            <a href="./index.php">Home</a>
+            <a href="index.php#aboutus">About Us</a>
+            <a href="index.php#ourcollection">Products</a>
             <a href="">FAQ</a>
             <a href="#footer">Contact Us</a>
             <a href="./create.php"><img id="user  user1" src="./assets2/9b91e3b2b4b199ba203624dabc95f709.svg" alt="alt text" /></a>
@@ -225,7 +225,7 @@ if (isset($_POST["add-to-cart"])) {
         
         const home = document.getElementById('home');
         home.addEventListener('click', function() {
-        window.location.href = "homepage.php";
+        window.location.href = "index.php";
         }); 
     </script>
 </body>

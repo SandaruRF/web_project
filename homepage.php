@@ -18,7 +18,7 @@ $conn->close();
             <img class="image3 logo" id="home" src="./assets2/footprint_brand_logo_blue.png" alt="alt text" />
         </div>
         <div class="topnav">
-            <a href="./homepage.php">Home</a>
+            <a href="./index.php">Home</a>
             <a href="#aboutus">About Us</a>
             <a href="#ourcollection">Products</a>
             <a href="">FAQ</a>
@@ -147,7 +147,7 @@ $conn->close();
 
        
         home.addEventListener('click', function() {
-        window.location.href = "homepage.php";
+        window.location.href = "index.php";
         }); 
         mens.addEventListener('click', function() {
         window.location.href = "men's_collection.php";
