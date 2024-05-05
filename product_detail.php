@@ -24,7 +24,7 @@ if (isset($_POST["add-to-cart"])) {
     $id = $_GET["product_id"];
     $qty = $_POST["qty"];
 
-    $sql = "INSERT INTO cart(shoe_id,quantity,price)VALUES(".$id.",".$qty.",".$product['price'].")";
+    $sql = "INSERT INTO cart(product_id,product_name,quantity,price)VALUES(".$product_id.",'".$product["product_name"]."',".$qty.",".$product['price'].")";
     if($conn->query($sql)===true){
         echo "<script>console.log('Added to the cart');</script>";
     }else{
@@ -138,8 +138,8 @@ if (isset($_POST["add-to-cart"])) {
         <div class="links">
             <h5 class="">Main Links</h5>
             <a href="men's_collection.php"><span >Men&#x27;s</span></a>
-            <a href="women's_collection.php"><span>Women&#x27;s</span></a>
-            <a href="kid's_collection.php"><span>Kid&#x27;s</span></a>
+            <a href="women's_collection.php"><span>Ladies</span></a>
+            <a href="kids_collection.php"><span>Kids</span></a>
             <a href=""><span>Limited Edition</span></a>
             <a href=""><span>School Shoes</span></a>
             <a href=""><span>Flip Flops &amp; Sandals</span></a>
