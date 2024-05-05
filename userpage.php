@@ -90,15 +90,15 @@ $conn->close();
         <h1 class="colTitle">Our Collection</h1>
         <div class="rect4">
             <div class="rect5" id="mens">
-                <img class="tileimage1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQf6xjKGh-M8G4r3KqbK0ANDnU1E_WCZQSJnI8I3zEmTp8BUWxwl5w-13kz8m9l7EwI0&usqp=CAU" alt="alt text" />
+                <img class="tileimage1" src="assets2/40CMA0043_NB0_02-removebg-preview.png"  alt="alt text" />
                 <h1 class="tile1">Men's Collection</h1>
             </div>
             <div class="rect51" id="womens">
-                <img class="tileimage2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWu_9A3SYwnclx45iWr6I4BeeC2cfZLNn68nzgWsS2xDElQUz5jj5Ie1hezYwaJUFZmS4&usqp=CAU" alt="alt text" />
+                <img class="tileimage2" src="assets2/6632bcdf21465_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (2).png" alt="alt text" />
                 <h1 class="tile2">Women's Collection</h1>
             </div>
-            <div class="rect52"  id="kids">
-                <img class="tileimage3" src="https://img.tatacliq.com/images/i3/437Wx649H/MP000000003609424_437Wx649H_20180906085331.jpeg" alt="alt text" />
+            <div class="rect52" id="kids">
+                <img class="tileimage3" src="assets2/663662d9063fb_5-removebg-preview.png" alt="alt text" />
                 <h1 class="tile3">Kids Collection</h1>
             </div>
             <div class="rect53" id="flips">
