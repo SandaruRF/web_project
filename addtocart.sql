@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `carddetail` (
-  `C_ID` int(16) NOT NULL,
+  `C_ID` varchar(16) NOT NULL,
   `CVN` int(3) NOT NULL,
   `Exp_Date` date NOT NULL,
   `Nameoncard` varchar(50) NOT NULL
@@ -57,7 +57,7 @@ CREATE TABLE `cart` (
 CREATE TABLE `c_billing_data` (
   `C_ID` int(11) NOT NULL,
   `Fname` varchar(50) NOT NULL,
-  `Lname` int(50) NOT NULL,
+  `Lname` varchar(50) NOT NULL,
   `Address` varchar(100) NOT NULL,
   `City` varchar(50) NOT NULL,
   `Postalcode` int(6) NOT NULL,
