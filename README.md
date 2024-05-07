@@ -32,12 +32,14 @@ Our team collaborated to bring FootPrint to life, with each member contributing 
 - [Hosted Site](https://footprintsl.000webhostapp.com/)
 - [Source Files](https://drive.google.com/drive/folders/1onr3RFVZcAmkCyxEuVG9puwZ4vnfqv2D?usp=sharing)
 
+**Note:** If a safety error occurs while accessing the hosted site, please try using Microsoft Edge browser.
+
 ## Getting Started
 
 To get started with FootPrint on your local machine, follow these steps:
 
 1. **Clone the Repository:**
-- git clone https://github.com/SandaruRF/web_project.git
+git clone https://github.com/SandaruRF/web_project.git
 
 2. **Create Database:**
 - Create a MySQL database named "addtocart".
