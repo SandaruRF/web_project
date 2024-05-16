@@ -51,6 +51,7 @@ session_start();
     <title>FootPrint Sign Up</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" />
     <link rel="stylesheet" href="create.css" />
+    <link rel="icon" type="image/x-icon" href="assets2/icon.png">
   </head>
   <body>
   <video autoplay muted loop id="myVideo">

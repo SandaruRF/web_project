@@ -18,7 +18,8 @@ $result = $conn->query($sql);
 
     <title>View Page</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="assets2/icon.png">
 
 </head>
 

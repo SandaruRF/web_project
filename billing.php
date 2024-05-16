@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 
   if ($result == TRUE) {
 
-    echo "New record created successfully.";
+    //echo "New record created successfully.";
 
   } else {
 
@@ -84,6 +84,7 @@ $conn->close();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Billing Details</title>
   <link rel="stylesheet" href="billing.css">
+  <link rel="icon" type="image/x-icon" href="assets2/icon.png">
 
 </head>
 

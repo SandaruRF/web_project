@@ -80,6 +80,7 @@ if ($result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/x-icon" href="assets2/icon.png">
 </head>
 <body>
     <video autoplay muted loop id="myVideo">
