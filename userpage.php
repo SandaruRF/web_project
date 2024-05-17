@@ -55,7 +55,7 @@ $conn->close();
                         <a href="logout.php" id="logOut" >Logout</a>
                     </div>
             </a>
-            <a href="./cart.php"><img src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text" /></a>
+            <a href="./cart.php"><img id="cart" src="./assets2/c8f056c259f21206352cc27abfdf197a.png" alt="alt text"/></a>
           </div>
            
     </header>

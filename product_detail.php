@@ -91,7 +91,25 @@ if (isset($_POST["add-to-cart"])) {
         <div class="product_details">
             <h3><?php echo $product['brand']; ?></h3>
             <h1><?php echo $product['product_name']; ?></h1>
-            <p>Men's Shoes</p>
+            <?php
+                switch($product['product_id']){
+                    case ($product['product_id']>=34):
+                        $category = "Accessories";
+                        break;
+                    case ($product['product_id']>=22):
+                        $category = "Kid's Shoes";
+                        break;
+                    case ($product['product_id']>=12):
+                        $category = "Women's Shoes";
+                        break;
+                    case ($product['product_id']>=1):
+                        $category = "Men's Shoes";
+                        break;
+                    default:
+                        $category = "Shoes";
+                }
+            ?>
+            <p><?php echo $category; ?></p>
             <p style="font-size: 18px; margin-bottom: 50px"><b>Rs. <?php echo $product['price']; ?>.00</b></p>
             <p>Size</p>
             <div class="sizes">

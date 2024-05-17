@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 05, 2024 at 03:42 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost:3306
+-- Generation Time: May 17, 2024 at 03:25 AM
+-- Server version: 10.5.20-MariaDB
+-- PHP Version: 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `addtocart`
+-- Database: `id22125927_addtocart`
 --
 
 -- --------------------------------------------------------
@@ -33,6 +33,7 @@ CREATE TABLE `carddetail` (
   `Exp_Date` date NOT NULL,
   `Nameoncard` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 -- --------------------------------------------------------
 
@@ -55,7 +56,7 @@ CREATE TABLE `cart` (
 --
 
 CREATE TABLE `c_billing_data` (
-  `C_ID` int(11) NOT NULL,
+  `C_ID` int(16) NOT NULL,
   `Fname` varchar(50) NOT NULL,
   `Lname` varchar(50) NOT NULL,
   `Address` varchar(100) NOT NULL,
@@ -65,6 +66,7 @@ CREATE TABLE `c_billing_data` (
   `Contactno` int(10) NOT NULL,
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 -- --------------------------------------------------------
 
@@ -100,16 +102,16 @@ INSERT INTO `product` (`product_id`, `product_name`, `price`, `quantity`, `color
 (8, 'New Balance 530 White Silver Navy', 28900, 1, 'White', 'White', 'New Balance', '1', 'uploads/66301e2866a46_11c39876-db31-4d2e-92b1-b26381496225.png', 'uploads/1bc9668c-a8f7-4cf4-8ebf-38187aa78c67.png', 'uploads/82fab65f-cd35-4814-94a2-19883e61fa18.png', 'uploads/0fae25a7-6d2b-4f2c-b3b7-20e67537b2f5.png'),
 (9, 'Lacoste Chaymon Leather', 40800, 1, 'Blue', 'Black', 'Lacoste', '1', 'uploads/66301e62da7dc_40CMA0043_NB0_01-removebg-preview.png', 'uploads/40CMA0043_NB0_05-removebg-preview.png', 'uploads/40CMA0043_NB0_04-removebg-preview.png', 'uploads/40CMA0043_NB0_02-removebg-preview.png'),
 (10, 'Air Jordan 1 Retro High OG Yellow Toe', 40000, 1, 'Yellow', 'White', 'Air Jordan', '1', 'uploads/66301e9994508_b839e493-7571-45b6-9693-770af12c5d97.png', 'uploads/443014c5-41b9-4763-8718-1e7a9f8c59e9.png', 'uploads/3f9e38b7-74ac-4e39-8163-5d29dd270e38.png', 'uploads/3bd90e16-7d0d-4a20-b2a2-de09bada7831.png'),
-(12, 'Dunk Low Next Nature SE', 35000, 5, 'White', 'Phantom', 'Nike', 'DX4361-004', 'uploads/663285cead73d_image_6-removebg-preview.png', 'uploads/663285ceae35c_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview.png', 'uploads/663285ceaeac4_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview (2).png', 'uploads/663285ceaefe8_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview (1).png'),
-(13, 'Nike Air More Uptempo', 19500, 5, 'White', 'Team White', 'Nike', 'FD9884-101', 'uploads/6632ad9474652_image_21-removebg-preview.png', 'uploads/6632ad9474ed4_air-more-uptempo-mens-slides-47mMCm-removebg-preview.png', 'uploads/6632ad947534c_air-more-uptempo-mens-slides-47mMCm-removebg-preview (2).png', 'uploads/6632ad947581d_air-more-uptempo-mens-slides-47mMCm-removebg-preview (1).png'),
-(14, 'Air Jordan Sophia', 25800, 5, 'Legend Medium Brown', 'Legend Pink', 'Jordan ', 'FZ7012-600', 'uploads/6632af16f4158_image_24-removebg-preview.png', 'uploads/6632af17005a3_jordan-sophia-womens-slides-8DlFQl-removebg-preview (1).png', 'uploads/6632af1700d5b_jordan-sophia-womens-slides-8DlFQl-removebg-preview (2).png', 'uploads/6632af1701501_jordan-sophia-womens-slides-8DlFQl-removebg-preview.png'),
+(12, 'Dunk Low Next Nature SE', 35000, 5, 'White', 'Green', 'Nike', 'DX4361-004', 'uploads/663285cead73d_image_6-removebg-preview.png', 'uploads/663285ceae35c_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview.png', 'uploads/663285ceaeac4_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview (2).png', 'uploads/663285ceaefe8_dunk-low-next-nature-se-womens-shoes-8Dk7Jr-removebg-preview (1).png'),
+(13, 'Nike Air More Uptempo', 19500, 5, 'White', 'White', 'Nike', 'FD9884-101', 'uploads/6632ad9474652_image_21-removebg-preview.png', 'uploads/6632ad9474ed4_air-more-uptempo-mens-slides-47mMCm-removebg-preview.png', 'uploads/6632ad947534c_air-more-uptempo-mens-slides-47mMCm-removebg-preview (2).png', 'uploads/6632ad947581d_air-more-uptempo-mens-slides-47mMCm-removebg-preview (1).png'),
+(14, 'Air Jordan Sophia', 25800, 5, 'Pink', 'Pink', 'Air Jordan ', 'FZ7012-600', 'uploads/6632af16f4158_image_24-removebg-preview.png', 'uploads/6632af17005a3_jordan-sophia-womens-slides-8DlFQl-removebg-preview (1).png', 'uploads/6632af1700d5b_jordan-sophia-womens-slides-8DlFQl-removebg-preview (2).png', 'uploads/6632af1701501_jordan-sophia-womens-slides-8DlFQl-removebg-preview.png'),
 (15, 'Nike Dunk Low', 34500, 5, 'Black', 'White', 'Nike', 'DD1503-10', 'uploads/6632b0cddf506_image_25-removebg-preview.png', 'uploads/6632b0cddfa8b_dunk-low-womens-shoes-ppQwKZ-removebg-preview.png', 'uploads/6632b0cddfe8a_dunk-low-womens-shoes-ppQwKZ-removebg-preview (2).png', 'uploads/6632b0cde0446_dunk-low-womens-shoes-ppQwKZ-removebg-preview (1).png'),
-(16, 'Winflo 9 Premium', 39000, 5, 'Black', 'While', 'Adidas', 'DR9831-001', 'uploads/6632b43172ef4_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (1).png', 'uploads/6632b431735e0_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (2).png', 'uploads/6632b43173989_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (3).png', 'uploads/6632b43173cfa_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview.png'),
-(17, ' Post cool', 22500, 5, 'White', 'Jade Smoke', 'Air Jordan', ' FZ6511-300', 'uploads/6632b72a4266c_jordan-post-womens-slides-G7XlRc-removebg-preview.png', 'uploads/6632b72a42b50_jordan-post-womens-slides-G7XlRc-removebg-preview (4).png', 'uploads/6632b72a42f3c_jordan-post-womens-slides-G7XlRc-removebg-preview (3).png', 'uploads/6632b72a433e9_jordan-post-womens-slides-G7XlRc-removebg-preview (1).png'),
-(18, 'Pegasus Trail 4', 42000, 5, 'Vapor Green/Light Ar', 'Light Armory Blue', 'Adidas', ' DJ6159-403', 'uploads/6632b876f1b6c_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview.png', 'uploads/6632b876f2336_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (4).png', 'uploads/6632b876f286f_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (2).png', 'uploads/6632b876f2d23_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (1).png'),
-(19, 'Calm greyet', 26000, 4, 'Oil Green', 'white', 'Lacoste', 'FD5130-300', 'uploads/6632babeaf712_calm-mens-mules-m5tTKn-removebg-preview.png', 'uploads/6632babeafc65_calm-mens-mules-m5tTKn-removebg-preview (3).png', 'uploads/6632babeb00bc_calm-mens-mules-m5tTKn-removebg-preview (2).png', 'uploads/6632babeb04ae_calm-mens-mules-m5tTKn-removebg-preview (1).png'),
-(20, 'Zoom Fly 5', 36500, 4, 'White', 'Vivid Sulfur', 'Lacoste', ' DM8974-100', 'uploads/6632bcdf20a3d_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview.png', 'uploads/6632bcdf20f0c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (3).png', 'uploads/6632bcdf21465_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (2).png', 'uploads/6632bcdf219c6_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (1).png'),
-(21, 'Tatum 2 \"Vortex\"', 370400, 5, 'Mint Foam', 'Black', 'Air Jordan', 'FJ6457-300', 'uploads/6632bea8207df_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview.png', 'uploads/6632bea820c40_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (3).png', 'uploads/6632bea82102c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (2).png', 'uploads/6632bea82154c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (1).png'),
+(16, 'Winflo 9 Premium', 39000, 5, 'Black', 'While', 'Nike', 'DR9831-001', 'uploads/6632b43172ef4_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (1).png', 'uploads/6632b431735e0_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (2).png', 'uploads/6632b43173989_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview (3).png', 'uploads/6632b43173cfa_wio-9-premium-womens-road-running-shoes-0MS1bT-removebg-preview.png'),
+(17, ' Post cool', 22500, 5, 'White', 'Green', 'Air Jordan', ' FZ6511-300', 'uploads/6632b72a4266c_jordan-post-womens-slides-G7XlRc-removebg-preview.png', 'uploads/6632b72a42b50_jordan-post-womens-slides-G7XlRc-removebg-preview (4).png', 'uploads/6632b72a42f3c_jordan-post-womens-slides-G7XlRc-removebg-preview (3).png', 'uploads/6632b72a433e9_jordan-post-womens-slides-G7XlRc-removebg-preview (1).png'),
+(18, 'Pegasus Trail 4', 42000, 5, 'Green', 'Blue', 'Adidas', ' DJ6159-403', 'uploads/6632b876f1b6c_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview.png', 'uploads/6632b876f2336_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (4).png', 'uploads/6632b876f286f_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (2).png', 'uploads/6632b876f2d23_pegasus-trail-4-womens-trail-running-shoes-CQT261-removebg-preview (1).png'),
+(19, 'Calm greyet', 26000, 4, 'Green', 'Green', 'Lacoste', 'FD5130-300', 'uploads/6632babeaf712_calm-mens-mules-m5tTKn-removebg-preview.png', 'uploads/6632babeafc65_calm-mens-mules-m5tTKn-removebg-preview (3).png', 'uploads/6632babeb00bc_calm-mens-mules-m5tTKn-removebg-preview (2).png', 'uploads/6632babeb04ae_calm-mens-mules-m5tTKn-removebg-preview (1).png'),
+(20, 'Zoom Fly 5', 36500, 4, 'White', 'Orange', 'Air Jordan', ' DM8974-100', 'uploads/6632bcdf20a3d_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview.png', 'uploads/6632bcdf20f0c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (3).png', 'uploads/6632bcdf21465_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (2).png', 'uploads/6632bcdf219c6_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (1).png'),
+(21, 'Tatum 2 \"Vortex\"', 370400, 5, 'Pink', 'White', 'Air Jordan', 'FJ6457-300', 'uploads/6632bea8207df_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview.png', 'uploads/6632bea820c40_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (3).png', 'uploads/6632bea82102c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (2).png', 'uploads/6632bea82154c_zoom-fly-5-womens-road-running-shoes-ShXjdb-removebg-preview (1).png'),
 (22, 'Merrel Trail glove 7', 10000, 10, 'Black', 'Pink', 'Merrel', 'Trail glove 7', 'uploads/663644e799ba6_1.PNG', 'uploads/663644e79a2d1_Capture.PNG', 'uploads/663644e79ae19_Capture3.PNG', 'uploads/663644e79ba6e_Capture4.PNG'),
 (23, 'Adidas Lite racer adapt', 16500, 10, 'Black', 'Gold', 'Adidas', 'Lite racer adapt', 'uploads/66364e7ebefdb_2.PNG', 'uploads/66364e7ebf6f2_2.1.PNG', 'uploads/66364e7ebffc1_2.3.PNG', 'uploads/66364e7ec08b2_2.4.PNG'),
 (24, 'Adidas Swift run 22', 22000, 10, 'White', 'Black', 'Adidas', 'Swift run 22', 'uploads/66364eed7c7f4_3.PNG', 'uploads/66364eed7d22d_3.1.PNG', 'uploads/66364eed7db5c_3.2.PNG', 'uploads/66364eed7e3ae_3.3.PNG'),
@@ -149,9 +151,7 @@ CREATE TABLE `signup` (
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Indexes for dumped tables
---
+
 
 --
 -- Indexes for table `cart`
@@ -186,13 +186,13 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `c_billing_data`
 --
 ALTER TABLE `c_billing_data`
-  MODIFY `C_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `C_ID` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -204,7 +204,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- Constraints for dumped tables

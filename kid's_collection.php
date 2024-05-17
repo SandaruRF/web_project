@@ -12,9 +12,9 @@
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'vans') {
         $sortOrder = "AND brand='vans'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'adidas') {
-        $sortOrder = "AND brand='Adidas'";
+        $sortOrder = "AND brand='adidas'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'skechers') {
-        $sortOrder = "AND brand='New skechers'";
+        $sortOrder = "AND brand='skechers'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'puma') {
         $sortOrder = "AND brand='puma'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'white') {

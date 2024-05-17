@@ -138,7 +138,7 @@ main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:baseline;
     margin: auto 0;
     margin-top: 10px;
     font-size: 16px;
@@ -154,7 +154,7 @@ main .card{
     border: 1px solid lightgray;
     border-radius: 10px;
     background-color: white;
-    margin: 10px 0;
+    margin: 10px 7px;
 }
 
 main .card:hover{
@@ -375,6 +375,7 @@ form .counter_btn .counter input{
     width: 44px;
     height: 40px;
 }
+
 #user:hover{
     content: url(./assets2/9b91e3b2b4b199ba203624dabc95f709\ copy\ -\ Copy.svg);
 }

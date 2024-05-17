@@ -13,8 +13,6 @@
         $sortOrder = "AND brand='Lacoste'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'adidas') {
         $sortOrder = "AND brand='Adidas'";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'newBalance') {
-        $sortOrder = "AND brand='New Balance'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'airJordan') {
         $sortOrder = "AND brand='Air Jordan'";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'white') {
@@ -23,8 +21,12 @@
         $sortOrder = "AND (color1='black' OR color2='black')";
     } elseif(isset($_GET['sort']) && $_GET['sort'] == 'green') {
         $sortOrder = "AND (color1='green' OR color2='green')";
-    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'yellow') {
-        $sortOrder = "AND (color1='yellow' OR color2='yellow')";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'pink') {
+        $sortOrder = "AND (color1='pink' OR color2='pink')";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'blue') {
+        $sortOrder = "AND (color1='blue' OR color2='blue')";
+    } elseif(isset($_GET['sort']) && $_GET['sort'] == 'orange') {
+        $sortOrder = "AND (color1='orange' OR color2='orange')";
     }
 
     $sql = "SELECT * FROM product WHERE product_id BETWEEN 12 AND 21 $sortOrder";
@@ -84,7 +86,9 @@
                     <a href="?sort=white">White</a>
                     <a href="?sort=black">Black</a>
                     <a href="?sort=green">Green</a>
-                    <a href="?sort=yellow">Yellow</a>
+                    <a href="?sort=pink">Pink</a>
+                    <a href="?sort=blue">Blue</a>
+                    <a href="?sort=orange">Orange</a>
                 </div>
             </div>
 
@@ -95,7 +99,6 @@
                     <a href="?sort=adidas">Adidas</a>
                     <a href="?sort=lacoste">Lacoste</a>
                     <a href="?sort=airJordan">Air Jordan</a>
-                    <a href="?sort=newBalance">New Balance</a>
                 </div>
             </div>
         </div>
